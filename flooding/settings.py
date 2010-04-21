@@ -110,11 +110,15 @@ CACHE_BACKEND = 'locmem:///'
 
 INSTALLED_APPS = (
     'flooding',
+    'lizard_flooding',
+    'lizard_presentation',
+    'lizard_visualization',
+    'lizard_base',
     'staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    # 'django.contrib.gis',
+    'django.contrib.gis',
     # 'django.contrib.gis.db',
     'django.contrib.markup',
     'django.contrib.sessions',
