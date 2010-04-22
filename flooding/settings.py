@@ -35,7 +35,6 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-# TODO: Switch this to the real production database.
 DATABASE_ENGINE = 'postgresql_psycopg2'
 # ^^^ 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 #DATABASE_NAME = os.path.join(BUILDOUT_DIR, 'var', 'sqlite', 'test.db')
@@ -127,3 +126,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
 )
+
+
+EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
