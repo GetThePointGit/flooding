@@ -36,13 +36,13 @@ ADMINS = (
 MANAGERS = ADMINS
 
 # TODO: Switch this to the real production database.
-DATABASE_ENGINE = 'sqlite3'
+DATABASE_ENGINE = 'postgresql_psycopg2'
 # ^^^ 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 #DATABASE_NAME = os.path.join(BUILDOUT_DIR, 'var', 'sqlite', 'test.db')
-DATABASE_NAME = 'flooding'
-DATABASE_USER = 'flooding'
-DATABASE_PASSWORD = 'flooding'
-DATABASE_HOST = '' # empty string for localhost.
+DATABASE_NAME = 'flooding20'
+DATABASE_USER = 'postgres'
+DATABASE_PASSWORD = 'lizard123'
+DATABASE_HOST = 'nens-webontw-01'
 DATABASE_PORT = '' # empty string for default.
 
 # Almost always set to 1.  Django allows multiple sites in one database.
