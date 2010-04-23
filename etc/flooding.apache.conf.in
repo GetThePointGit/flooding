@@ -25,6 +25,11 @@
 
   DocumentRoot ${buildout:directory}/var/static
 
+  # Redirects of old /flooding homepage.  NOT of the flooding/* stuff!
+  RewriteEngine On
+  RewriteRule   ^flooding$ / [R=301,L]
+  RewriteRule   ^flooding/$ / [R=301,L]
+
   # Static files are hosted by apache itself.
   # TODO: favicon.ico and robots.txt
   # User-uploaded media: MEDIA_URL = '/media/'
