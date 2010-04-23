@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-0.1 (unreleased)
+0.1 (2010-04-23)
 ----------------
 
 - Fixed up the configuration: database, domainname, external PNGs with model
