@@ -41,7 +41,8 @@ DATABASE_ENGINE = 'postgresql_psycopg2'
 DATABASE_NAME = 'flooding20_new'
 DATABASE_USER = 'postgres'
 DATABASE_PASSWORD = 'lizard123'
-DATABASE_HOST = 'nens-webontw-01'
+#DATABASE_HOST = 'nens-webontw-01'
+DATABASE_HOST = '194.105.129.235'
 DATABASE_PORT = '' # empty string for default.
 
 # Almost always set to 1.  Django allows multiple sites in one database.
