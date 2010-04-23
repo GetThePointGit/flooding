@@ -5,4 +5,7 @@ Changelog of flooding
 0.1 (unreleased)
 ----------------
 
-- Initial library skeleton created by thaskel.  [your name]
+- Fixed up the configuration: database, domainname, external PNGs with model
+  results, etc.
+
+- Initial library skeleton created by nensskel.
