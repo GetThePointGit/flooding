@@ -129,4 +129,4 @@ INSTALLED_APPS = (
 )
 
 
-EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
+#EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
