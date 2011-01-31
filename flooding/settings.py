@@ -8,6 +8,9 @@
 
 import os
 import tempfile
+import matplotlib
+matplotlib.use('Agg')
+
 
 # SETTINGS_DIR allows media paths and so to be relative to this settings file
 # instead of hardcoded to c:\only\on\my\computer.
