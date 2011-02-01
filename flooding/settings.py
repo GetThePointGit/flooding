@@ -63,7 +63,6 @@ LANGUAGE_CODE = 'nl-NL'
 # For at-runtime language switching.  Note: they're shown in reverse order in
 # the interface!
 LANGUAGES = (
-    ('en', 'English'),
     ('nl', 'Nederlands'),
 )
 # If you set this to False, Django will make some optimizations so as not to
@@ -133,3 +132,10 @@ INSTALLED_APPS = (
 
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
+
+
+try:
+    from flooding.localproductionsettings import *
+    # For local production overrides (DB passwords, for instance)
+except ImportError:
+    pass
