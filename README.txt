@@ -8,6 +8,18 @@ Usage, etc.
 More details in src/flooding/USAGE.txt .
 
 
+WARNING: buildout run on jupiter
+--------------------------------
+
+Buildout chokes if you run it with the smb share still mounted.  So,
+as root, first unmount ('umount') the share::
+
+  #> umount /srv/flooding.lizardsystem.nl/var/external_data
+
+After buildout finished correctly, mount it again as root::
+
+  #> mount /srv/flooding.lizardsystem.nl/var/external_data
+
 Development installation
 ------------------------
 
