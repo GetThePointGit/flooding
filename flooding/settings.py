@@ -131,5 +131,5 @@ INSTALLED_APPS = (
     'django.contrib.sites',
 )
 
-
+SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
