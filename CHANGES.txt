@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-0.5 (unreleased)
+0.5 (2011-02-01)
 ----------------
 
 - Including a couple of fixes to the setup from production.
