@@ -1,6 +1,7 @@
 <VirtualHost *:80>
   ServerName flooding.lizardsystem.nl
   ServerAlias www.flooding.lizardsystem.nl
+  ServerAlias test.flooding.lizardsystem.nl
 
   WSGIProcessGroup flooding
   WSGIDaemonProcess flooding threads=10 maximum-requests=10000 user=buildout group=buildout
