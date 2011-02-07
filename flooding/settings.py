@@ -132,7 +132,7 @@ INSTALLED_APPS = (
 
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
-
+GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
 
 try:
     from flooding.localproductionsettings import *
