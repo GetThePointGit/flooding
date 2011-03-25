@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-0.10 (unreleased)
+0.10 (2011-03-25)
 -----------------
 
 - Nothing changed yet.
