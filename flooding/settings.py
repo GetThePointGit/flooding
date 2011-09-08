@@ -6,11 +6,13 @@
 # database ports go into localsettings.py.  May your hear turn purple if you
 # ever put personal settings into this file or into developmentsettings.py!
 
+import logging
 import os
 import tempfile
 import matplotlib
 matplotlib.use('Agg')
 
+from logging.handlers import RotatingFileHandler
 
 # SETTINGS_DIR allows media paths and so to be relative to this settings file
 # instead of hardcoded to c:\only\on\my\computer.
@@ -38,15 +40,16 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-DATABASE_ENGINE = 'postgresql_psycopg2'
-# ^^^ 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#DATABASE_NAME = os.path.join(BUILDOUT_DIR, 'var', 'sqlite', 'test.db')
-DATABASE_NAME = 'flooding20_new'
-DATABASE_USER = 'postgres'
-DATABASE_PASSWORD = 'lizard123'
-#DATABASE_HOST = 'nens-webontw-01'
-DATABASE_HOST = '194.105.129.235'
-DATABASE_PORT = '' # empty string for default.
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'HOST': '194.105.129.235',
+        'NAME': 'flooding21',
+        'USER': 'postgres',
+        'PASSWORD': 'lizard123'
+        }
+    }
+
 
 # Almost always set to 1.  Django allows multiple sites in one database.
 SITE_ID = 1
@@ -88,6 +91,16 @@ STATIC_URL = '/static_media/'
 # admin's static media into STATIC_ROOT/admin.
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
+# Storage engine to be used during compression
+###COMPRESS_STORAGE = "staticfiles.storage.StaticFileStorage"
+
+# The URL that linked media will be read from and compressed media will be
+# written to.
+###COMPRESS_URL = STATIC_URL
+# The absolute file path that linked media will be read from and compressed
+# media will be written to.
+###COMPRESS_ROOT = STATIC_ROOT
+
 # django-staticfiles needs an extra context processor to allow you to use {{
 # STATIC_URL }}myapp/my.css in your templates.
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -105,7 +118,7 @@ SECRET_KEY = 'b8cdceb3-4879-4dcc-96ef-5030c2493fa0'
 
 ROOT_URLCONF = 'flooding.urls'
 
-CACHE_BACKEND = 'locmem:///'
+CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 # Note: for development only, check django website for caching solutions for
 # production environments
 # ^^^ TODO
@@ -124,11 +137,33 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.gis',
-    # 'django.contrib.gis.db',
     'django.contrib.markup',
     'django.contrib.sessions',
     'django.contrib.sites',
 )
+
+# File logging for production.  If logging is already defined (for instance in
+# developmentsettings.py, this won't have any effect.
+logging.basicConfig(
+    level=logging.DEBUG,
+    format = ('=' * 78 + '\n' +
+              '%(asctime)s %(name)s %(levelname)s\n%(message)s'),
+    filename=os.path.join(BUILDOUT_DIR, 'var', 'log', 'django.log'),
+    filemode='a')
+
+# We create a handler to be able to show the tail of the Django log to the
+# user. The handler implements the tail through up to two log files that are
+# each up to 4 KB large. The log files are called
+#
+#    - /var/log/django_tail.log and
+#    - /var/log/django_tail.log.1
+#
+# The latter log file is only created when the former has reached its maximum
+# size.
+TAIL_LOG = os.path.join(BUILDOUT_DIR, 'var', 'log', 'django_tail.log')
+
+handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
+logging.getLogger().addHandler(handler)
 
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
