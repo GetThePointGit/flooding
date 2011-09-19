@@ -15,6 +15,7 @@ install_requires = [
     'Django',
     'django-staticfiles',
     'lizard-flooding >= 1.1',
+    'lizard-flooding-worker',
     ],
 
 tests_require = [
