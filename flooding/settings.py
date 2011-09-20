@@ -12,6 +12,11 @@ import tempfile
 import matplotlib
 matplotlib.use('Agg')
 
+import sys
+import PIL.Image
+sys.modules['Image'] = PIL.Image
+
+
 from logging.handlers import RotatingFileHandler
 
 # SETTINGS_DIR allows media paths and so to be relative to this settings file
@@ -131,6 +136,7 @@ INSTALLED_APPS = (
     'lizard_flooding.tools.importtool',
     'lizard_flooding.tools.exporttool',
     'lizard_flooding.tools.approvaltool',
+    'lizard_flooding-worker',
     'lizard_base',
     'staticfiles',
     'django.contrib.admin',
@@ -168,6 +174,16 @@ logging.getLogger().addHandler(handler)
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
 GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
+
+#location of directories for task execution. Pelase configure to local installation 
+#root of HIS schade en slachtoffers module
+HISSSM_ROOT=''
+#root of sobek program installation
+SOBEK_PROGRAM_ROOT=''
+#root of sobek projects
+SOBEK_PROJECT_ROOT=''
+#root of temporary directory for flooding tasks
+TMP_ROOT='c:/temp'
 
 try:
     from flooding.localproductionsettings import *
