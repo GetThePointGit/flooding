@@ -46,3 +46,29 @@ versions), add them as an "svn external" in the ``local_checkouts/`` directory
 and add them to the ``develop =`` list in buildout.cfg.
 
 Tests can always be run with ``bin/test`` or ``bin\test.exe``.
+
+
+Model Migration:
+
+Add field workflow_template
+
+      flooding21=> Alter table flooding_scenario
+                   Add COLUMN workflow_template integer;
+
+Create Foreign key
+
+      flooding21=> ALTER TABLE flooding_scenario
+                   ADD CONSTRAINT workflowfk
+                   FOREIGN KEY (workflow_template)
+                   REFERENCES lizard_flooding_worker_workflowtemplate
+                   (id);
+
+Load data
+
+     $> bin/django loaddata lizard_flooding_worker
+
+Update field with same available workflow_template_id
+
+       flooding21=> UPDATE flooding_scenario
+                    SET workflow_template=[workflow_template_id];
+

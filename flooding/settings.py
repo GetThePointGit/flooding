@@ -131,12 +131,12 @@ CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 INSTALLED_APPS = (
     'flooding',
     'lizard_flooding',
+    'lizard_flooding_worker',
     'lizard_presentation',
     'lizard_visualization',
     'lizard_flooding.tools.importtool',
     'lizard_flooding.tools.exporttool',
     'lizard_flooding.tools.approvaltool',
-    'lizard_flooding-worker',
     'lizard_base',
     'staticfiles',
     'django.contrib.admin',
@@ -146,6 +146,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'supervisor',
 )
 
 # File logging for production.  If logging is already defined (for instance in
@@ -175,7 +176,7 @@ SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentat
 #EXTERNAL_MOUNTED_DIR = os.path.join(BUILDOUT_DIR, 'var', 'external_data')
 GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
 
-#location of directories for task execution. Pelase configure to local installation 
+#location of directories for task execution. Pelase configure to local installation
 #root of HIS schade en slachtoffers module
 HISSSM_ROOT=''
 #root of sobek program installation
