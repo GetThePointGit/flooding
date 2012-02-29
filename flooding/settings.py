@@ -158,6 +158,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'supervisor',
+    'gunicorn',
 )
 
 # File logging for production.  If logging is already defined (for instance in

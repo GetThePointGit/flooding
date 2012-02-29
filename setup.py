@@ -4,7 +4,7 @@ import os.path
 version = '0.15dev'
 
 long_description = '\n\n'.join([
-    open('README.txt').read(),
+    open('README.rst').read(),
     open(os.path.join('flooding', 'USAGE.txt')).read(),
     open('TODO.txt').read(),
     open('CREDITS.txt').read(),
@@ -14,6 +14,7 @@ long_description = '\n\n'.join([
 install_requires = [
     'Django',
     'django-staticfiles',
+    'gunicorn',
     'lizard-flooding >= 1.1',
     'lizard-flooding-worker',
     'supervisor',
