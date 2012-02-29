@@ -118,6 +118,17 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'staticfiles.context_processors.static_url',
     )
 
+MIDDLEWARE_CLASSES = (
+    # Gzip needs to be at the top.
+    'django.middleware.gzip.GZipMiddleware',
+    # Below is the default list, don't modify it.
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    )
+
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'b8cdceb3-4879-4dcc-96ef-5030c2493fa0'
 
