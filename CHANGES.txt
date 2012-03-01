@@ -5,7 +5,7 @@ Changelog of flooding
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Increased django-staticfiles version trying to get it to work.
 
 
 1.0.2 (2012-03-01)
