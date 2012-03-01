@@ -5,13 +5,13 @@ Changelog of flooding
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed path to external data share.
 
 
 1.0.1 (2012-03-01)
 ------------------
 
-- Nothing changed yet.
+- Fixed staging settings.
 
 
 1.0 (2012-03-01)
