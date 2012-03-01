@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.0.2 (unreleased)
+1.0.2 (2012-03-01)
 ------------------
 
 - Changed path to external data share.
