@@ -1,5 +1,7 @@
 from flooding.settings import *
 
+DEBUG = True
+
 DATABASES = {
     # Changed server from production to staging
     'default': {
