@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-0.15 (unreleased)
------------------
+1.0 (2012-03-01)
+----------------
 
 - Lots of changes for the move to Amsterdam, new buildouts
 
