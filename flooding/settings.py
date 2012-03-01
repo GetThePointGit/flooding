@@ -48,7 +48,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'HOST': 'p-flod-db-00-d1.external-nens.local'
+        'HOST': 'p-flod-db-00-d1.external-nens.local',
         'NAME': 'flooding',
         'USER': 'flooding',
         'PASSWORD': 'ki60ek9A'
