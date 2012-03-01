@@ -18,6 +18,7 @@ install_requires = [
     'lizard-flooding >= 1.1',
     'lizard-flooding-worker',
     'supervisor',
+    ''
     ],
 
 tests_require = [

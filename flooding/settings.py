@@ -28,6 +28,9 @@ SETTINGS_DIR = os.path.dirname(os.path.realpath(__file__))
 # to place all collected static files.
 BUILDOUT_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, '..'))
 
+
+
+
 # Triple blast.  Needed to get matplotlib from barfing on the server: it needs
 # to be able to write to some directory.
 if 'MPLCONFIGDIR' not in os.environ:
@@ -124,7 +127,7 @@ MIDDLEWARE_CLASSES = (
     # Below is the default list, don't modify it.
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     )
@@ -185,7 +188,8 @@ handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
-EXTERNAL_MOUNTED_DIR = '/var/local/flooding/external_data'
+EXTERNAL_PRESENTATION_MOUNTED_DIR = '/var/local/flooding/external_data'
+EXTERNAL_RESULT_MOUNTED_DIR = '/var/local/flooding/external_result_data'
 GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
 
 #location of directories for task execution. Pelase configure to local installation
