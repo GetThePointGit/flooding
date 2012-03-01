@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.0.6 (unreleased)
+1.0.6 (2012-03-01)
 ------------------
 
 - removed a lot of unused files form weblib
