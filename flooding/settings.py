@@ -188,8 +188,8 @@ handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
 SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
-EXTERNAL_PRESENTATION_MOUNTED_DIR = '/var/local/flooding/external_data'
-EXTERNAL_RESULT_MOUNTED_DIR = '/var/local/flooding/external_result_data'
+EXTERNAL_PRESENTATION_MOUNTED_DIR = '/mnt/flooding/Flooding/presentationdatabase_totaal'
+EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
 GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
 
 #location of directories for task execution. Pelase configure to local installation

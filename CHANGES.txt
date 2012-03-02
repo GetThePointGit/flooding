@@ -5,7 +5,11 @@ Changelog of flooding
  (2012-03-01)
 --------------
 
-- Nothing changed yet.
+- pinned new version of lizard-flooding (1.16)
+
+- added new var directory for generated icons
+
+- changed mount dirs in settings.py
 
 
 1.0.6 (2012-03-01)
