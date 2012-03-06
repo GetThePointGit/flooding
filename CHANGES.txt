@@ -2,10 +2,10 @@ Changelog of flooding
 ===================================================
 
 
-1.1.1 (unreleased)
+1.1.1 (2012-03-06)
 ------------------
 
-- Nothing changed yet.
+- Correct SYMBOLS_DIR, GISDATA settings.
 
 
 1.1 (2012-03-02)
