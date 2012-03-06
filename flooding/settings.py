@@ -16,6 +16,7 @@ import sys
 import PIL.Image
 sys.modules['Image'] = PIL.Image
 
+from pkg_resources import resource_filename
 
 from logging.handlers import RotatingFileHandler
 
@@ -187,10 +188,10 @@ TAIL_LOG = os.path.join(BUILDOUT_DIR, 'var', 'log', 'django_tail.log')
 handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
-SYMBOLS_DIR = 'C:/repo/flooding/local_checkouts/lizard-flooding/lizard_presentation/media/lizard_presentation/symbols/'
+SYMBOLS_DIR = resource_filename('lizard_visualization', 'media/lizard_visualization/symbols')
 EXTERNAL_PRESENTATION_MOUNTED_DIR = '/mnt/flooding/Flooding/presentationdatabase_totaal'
 EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
-GIS_DIR = 'C:/repo/gisdata/uiteindelijk/'
+GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
 #location of directories for task execution. Pelase configure to local installation
 #root of HIS schade en slachtoffers module
