@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.1.2 (unreleased)
+1.1.2 (2012-03-07)
 ------------------
 
 - pinned new versino of lizard-flooding (1.17), solved a bug during saving
