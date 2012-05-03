@@ -5,7 +5,8 @@ Changelog of flooding
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed configuration for Nginx so that it can download files from
+  /mnt/flooding, internal only (using X-Accelerated-Redirect).
 
 
 1.1.4 (2012-04-24)
