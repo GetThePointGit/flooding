@@ -17,7 +17,7 @@ server {
        expires 24h;
     }
 
-    location /download_result/ {
+    location /download_results/ {
        internal;
        alias /mnt/flooding/Flooding/resultaten/ ;
     }
