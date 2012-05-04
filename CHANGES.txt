@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.1.5 (unreleased)
+1.1.5 (2012-05-04)
 ------------------
 
 - Changed configuration for Nginx so that it can download files from
