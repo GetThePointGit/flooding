@@ -59,7 +59,7 @@ DATABASES = {
         'HOST': 'p-flod-db-00-d1.external-nens.local',
         'NAME': 'flooding',
         'USER': 'flooding',
-        'PASSWORD': 'ki60ek9A'
+        'PASSWORD': 'XXXXX' # See localproductionsettings.py
         }
     }
 
