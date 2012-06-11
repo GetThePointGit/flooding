@@ -6,6 +6,10 @@
 # database ports go into localsettings.py.  May your hear turn purple if you
 # ever put personal settings into this file or into developmentsettings.py!
 
+from lizard_ui.settingshelper import STATICFILES_FINDERS
+STATICFILES_FINDERS = STATICFILES_FINDERS
+
+
 import logging
 import os
 import tempfile
