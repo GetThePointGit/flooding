@@ -5,7 +5,6 @@ version = '1.1.8dev'
 
 long_description = '\n\n'.join([
     open('README.rst').read(),
-    open(os.path.join('flooding', 'USAGE.txt')).read(),
     open('TODO.txt').read(),
     open('CREDITS.txt').read(),
     open('CHANGES.txt').read(),
