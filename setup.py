@@ -13,10 +13,12 @@ long_description = '\n\n'.join([
 
 install_requires = [
     'Django',
+    'django-extensions',
     'django-staticfiles',
+    'django-nose',
     'gunicorn',
-    'lizard-flooding >= 1.1',
-    'lizard-flooding-worker',
+    'flooding-lib >= 1.1',
+    'flooding-worker',
     'supervisor',
     ''
     ],
