@@ -171,6 +171,8 @@ INSTALLED_APPS = (
     'gunicorn',
 )
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
 # File logging for production.  If logging is already defined (for instance in
 # developmentsettings.py, this won't have any effect.
 logging.basicConfig(
