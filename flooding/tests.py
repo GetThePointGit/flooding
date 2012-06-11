@@ -1,16 +1,13 @@
-import doctest
+# (c) Nelen & Schuurmans.  GPL licensed, see LICENSE.txt.
+
+from django.test import TestCase
+from django.test.client import Client
 
 
-def suite():
-    """Return test suite
+class IntegrationTest(TestCase):
 
-    This method is automatically called by django's test mechanism.
-
-    """
-    return doctest.DocFileSuite(
-        'USAGE.txt',
-        #'TODO_several_more_tests.txt',
-        module_relative=True,
-        optionflags=(doctest.NORMALIZE_WHITESPACE|
-                     doctest.ELLIPSIS|
-                     doctest.REPORT_NDIFF))
+    def test_homepage(self):
+        c = Client()
+        url = '/'
+        response = c.get(url)
+        self.assertEquals(response.status_code, 200)
