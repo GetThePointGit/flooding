@@ -8,3 +8,5 @@ etc/*.nginx.conf
 *.pyc
 parts
 var
+flooding/localproductionsettings.py
+flooding/localstagingsettings.py
