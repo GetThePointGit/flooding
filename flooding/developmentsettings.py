@@ -18,16 +18,15 @@ MIDDLEWARE_CLASSES += (
 
 INSTALLED_APPS += ('debug_toolbar',)
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#        #'HOST': '194.105.129.235',
-#        'HOST': 'localhost',
-#        'NAME': 'flooding21',
-#        'USER': 'buildout',
-#        'PASSWORD': 'buildout'
-#        }
-#    }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'HOST': '',
+        'NAME': 'flooding',
+        'USER': 'buildout',
+        'PASSWORD': 'buildout'
+        }
+    }
 
 try:
     from flooding.localsettings import *
