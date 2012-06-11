@@ -34,8 +34,6 @@ SETTINGS_DIR = os.path.dirname(os.path.realpath(__file__))
 BUILDOUT_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, '..'))
 
 
-
-
 # Triple blast.  Needed to get matplotlib from barfing on the server: it needs
 # to be able to write to some directory.
 if 'MPLCONFIGDIR' not in os.environ:
@@ -59,7 +57,7 @@ DATABASES = {
         'HOST': 'p-flod-db-00-d1.external-nens.local',
         'NAME': 'flooding',
         'USER': 'flooding',
-        'PASSWORD': 'XXXXX' # See localproductionsettings.py
+        'PASSWORD': 'XXXXX'  # See localproductionsettings.py
         }
     }
 
@@ -177,8 +175,8 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 # developmentsettings.py, this won't have any effect.
 logging.basicConfig(
     level=logging.DEBUG,
-    format = ('=' * 78 + '\n' +
-              '%(asctime)s %(name)s %(levelname)s\n%(message)s'),
+    format=('=' * 78 + '\n' +
+            '%(asctime)s %(name)s %(levelname)s\n%(message)s'),
     filename=os.path.join(BUILDOUT_DIR, 'var', 'log', 'django.log'),
     filemode='a')
 
@@ -196,20 +194,22 @@ TAIL_LOG = os.path.join(BUILDOUT_DIR, 'var', 'log', 'django_tail.log')
 handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
-SYMBOLS_DIR = resource_filename('lizard_visualization', 'media/lizard_visualization/symbols')
-EXTERNAL_PRESENTATION_MOUNTED_DIR = '/mnt/flooding/Flooding/presentationdatabase_totaal'
+SYMBOLS_DIR = resource_filename(
+    'lizard_visualization', 'media/lizard_visualization/symbols')
+EXTERNAL_PRESENTATION_MOUNTED_DIR = (
+    '/mnt/flooding/Flooding/presentationdatabase_totaal')
 EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
-#location of directories for task execution. Pelase configure to local installation
-#root of HIS schade en slachtoffers module
-HISSSM_ROOT=''
+#location of directories for task execution. Pelase configure to local
+#installation root of HIS schade en slachtoffers module
+HISSSM_ROOT = ''
 #root of sobek program installation
-SOBEK_PROGRAM_ROOT=''
+SOBEK_PROGRAM_ROOT = ''
 #root of sobek projects
-SOBEK_PROJECT_ROOT=''
+SOBEK_PROJECT_ROOT = ''
 #root of temporary directory for flooding tasks
-TMP_ROOT='c:/temp'
+TMP_ROOT = 'c:/temp'
 
 try:
     from flooding.localproductionsettings import *

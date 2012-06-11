@@ -8,7 +8,7 @@ DATABASES = {
         'NAME': 'floodingtest',
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'USER': 'floodingtest',
-        'PASSWORD': 'XXXXXX', # See localstagingsettings.py
+        'PASSWORD': 'XXXXXX',  # See localstagingsettings.py
         'HOST': 'p-flod-db-00-d1.external-nens.local',
         'PORT': '',
         },

@@ -8,6 +8,7 @@ from flooding_base.models import SubApplication
 from flooding_base.models import Setting
 from flooding_base.models import Site
 
+
 class IntegrationTest(TestCase):
     def setUp(self):
         settings = (
