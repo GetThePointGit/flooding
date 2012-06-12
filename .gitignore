@@ -10,4 +10,5 @@ parts
 var
 flooding/localproductionsettings.py
 flooding/localstagingsettings.py
+flooding/localsettings.py
 nosetests.xml

@@ -9,6 +9,8 @@ Changelog of flooding
 
 - Required new versions of the libraries, because of all the name changes.
 
+- Added flooding/localsettings.py to .gitignore.
+
 1.1.7 (2012-05-16)
 ------------------
 
