@@ -149,13 +149,14 @@ INSTALLED_APPS = (
     'flooding',
     'flooding_lib',
     'flooding_worker',
-    'lizard_presentation',
-    'lizard_visualization',
+    'flooding_presentation',
+    'flooding_visualization',
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
     'flooding_lib.tools.approvaltool',
     'flooding_base',
     'staticfiles',
+    'south',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -164,7 +165,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django_extensions',
-    'django_nose',
+    'django_nose',  # Must be below south
     'supervisor',
     'gunicorn',
 )
@@ -195,7 +196,7 @@ handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
 SYMBOLS_DIR = resource_filename(
-    'lizard_visualization', 'media/lizard_visualization/symbols')
+    'flooding_visualization', 'media/flooding_visualization/symbols')
 EXTERNAL_PRESENTATION_MOUNTED_DIR = (
     '/mnt/flooding/Flooding/presentationdatabase_totaal')
 EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'

@@ -7,6 +7,7 @@ Changelog of flooding
 
 - Changed to flooding-base, flooding-lib and flooding-worker, on Git.
 
+- Required new versions of the libraries, because of all the name changes.
 
 1.1.7 (2012-05-16)
 ------------------
