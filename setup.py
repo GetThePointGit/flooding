@@ -16,8 +16,8 @@ install_requires = [
     'django-staticfiles',
     'django-nose',
     'gunicorn',
-    'flooding-base >= 1.23',
-    'flooding-lib >= 1.29',
+    'flooding-base >= 1.25',
+    'flooding-lib >= 1.30',
     'flooding-worker >= 0.4',
     'supervisor',
     'south'
