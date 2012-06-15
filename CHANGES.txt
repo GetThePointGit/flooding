@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.1.8 (unreleased)
-------------------
+1.2 (2012-06-15)
+----------------
 
 - Changed to flooding-base, flooding-lib and flooding-worker, on Git.
 
