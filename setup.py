@@ -20,7 +20,7 @@ install_requires = [
     'flooding-lib >= 1.30',
     'flooding-worker >= 0.4',
     'supervisor',
-    'south'
+    'south',
     ],
 
 tests_require = [
