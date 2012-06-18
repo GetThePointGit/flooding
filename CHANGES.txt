@@ -2,13 +2,20 @@ Changelog of flooding
 ===================================================
 
 
-1.1.8 (unreleased)
-------------------
+1.3 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
+1.2 (2012-06-15)
+----------------
 
 - Changed to flooding-base, flooding-lib and flooding-worker, on Git.
 
-- Added flooding/localsettings.py to .gitignore.
+- Required new versions of the libraries, because of all the name changes.
 
+- Added flooding/localsettings.py to .gitignore.
 
 1.1.7 (2012-05-16)
 ------------------

@@ -1,7 +1,7 @@
 from setuptools import setup
 import os.path
 
-version = '1.1.8dev'
+version = '1.3dev'
 
 long_description = '\n\n'.join([
     open('README.rst').read(),
@@ -16,10 +16,11 @@ install_requires = [
     'django-staticfiles',
     'django-nose',
     'gunicorn',
-    'flooding-lib >= 1.1',
-    'flooding-worker',
+    'flooding-base >= 1.25',
+    'flooding-lib >= 1.30',
+    'flooding-worker >= 0.4',
     'supervisor',
-    ''
+    'south',
     ],
 
 tests_require = [
