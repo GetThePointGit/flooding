@@ -4,8 +4,23 @@ Changelog of flooding
 
 1.3 (unreleased)
 ----------------
+- Tasks to do after update:
+    bin/django dbshell
+        drop table lizard_flooding_worker_tasktype CASCADE;
+        drop table lizard_flooding_worker_workflow CASCADE;
+        drop table lizard_flooding_worker_workflowtask CASCADE;
+        drop table lizard_flooding_worker_logging CASCADE;
+        drop table lizard_flooding_worker_workflowtemplate CASCADE;
+        drop table lizard_flooding_worker_workflowtemplatetask CASCADE;
+    bin/django shell
+        from south.models import *
+        MigrationHistory.objects.filter(app_name='lizard_flooding_worker').delete()
+    bin/django migrate flooding_worker
+    bin/django loaddata flooding_worker
 
-- Nothing changed yet.
+- Updated floding-worker to 0.6.1:
+    - Replaced dependency floding_worker.Workflow to flooding_lib.Scenario.
+    - created a new initial migrationschema.
 
 
 1.2 (2012-06-15)
