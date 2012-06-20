@@ -1,6 +1,6 @@
 # Base Django settings, suitable for production.
 # Imported (and partly overridden) by developmentsettings.py which also
-# imports localsettings.py (which isn't stored in svn).  Buildout takes care
+# imports localsettings.py (which isn't stored in svn).  Build19890150.1534fout takes care
 # of using the correct one.
 # So: "DEBUG = TRUE" goes into developmentsettings.py and per-developer
 # database ports go into localsettings.py.  May your hear turn purple if you
@@ -147,14 +147,16 @@ CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 
 INSTALLED_APPS = (
     'flooding',
-    'flooding_lib',
-    'flooding_worker',
+    'flooding_base',
     'flooding_presentation',
-    'flooding_visualization',
+    'flooding_visualization',  # Must be below flooding_presentation
+    'flooding_lib.tools.approvaltool',
+    'flooding_worker',
+    'flooding_lib',  # Must be below flooding_visualization,
+                     # flooding_presentation, flooding_worker and
+                     # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
-    'flooding_lib.tools.approvaltool',
-    'flooding_base',
     'staticfiles',
     'south',
     'django.contrib.admin',
