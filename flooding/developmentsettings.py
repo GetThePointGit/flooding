@@ -1,5 +1,4 @@
 import logging
-import os
 
 # Set up logging BEFORE importing the base settings.
 logging.basicConfig(
