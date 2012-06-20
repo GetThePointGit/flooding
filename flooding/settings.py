@@ -1,10 +1,11 @@
-# Base Django settings, suitable for production.
-# Imported (and partly overridden) by developmentsettings.py which also
-# imports localsettings.py (which isn't stored in svn).  Build19890150.1534fout takes care
-# of using the correct one.
-# So: "DEBUG = TRUE" goes into developmentsettings.py and per-developer
-# database ports go into localsettings.py.  May your hear turn purple if you
-# ever put personal settings into this file or into developmentsettings.py!
+# Base Django settings, suitable for production.  Imported (and partly
+# overridden) by developmentsettings.py which also imports
+# localsettings.py (which isn't stored in svn).
+# Build19890150.1534fout takes care of using the correct one.  So:
+# "DEBUG = TRUE" goes into developmentsettings.py and per-developer
+# database ports go into localsettings.py.  May your hear turn purple
+# if you ever put personal settings into this file or into
+# developmentsettings.py!
 
 from lizard_ui.settingshelper import STATICFILES_FINDERS
 STATICFILES_FINDERS = STATICFILES_FINDERS
