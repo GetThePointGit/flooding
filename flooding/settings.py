@@ -18,8 +18,11 @@ import matplotlib
 matplotlib.use('Agg')
 
 import sys
-import PIL.Image
-sys.modules['Image'] = PIL.Image
+try:
+	import Image
+except ImportError:
+	import PIL.Image
+	sys.modules['Image'] = PIL.Image
 
 from pkg_resources import resource_filename
 

@@ -21,6 +21,8 @@ Changelog of flooding
 - Updated floding-worker to 0.6.1:
     - Replaced dependency floding_worker.Workflow to flooding_lib.Scenario.
     - created a new initial migrationschema.
+	
+- Updated flooding.settings due import error of PIL.Image 
 
 
 1.2 (2012-06-15)
