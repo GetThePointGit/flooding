@@ -19,10 +19,10 @@ matplotlib.use('Agg')
 
 import sys
 try:
-	import Image
+    import PIL.Image
+    sys.modules['Image'] = PIL.Image
 except ImportError:
-	import PIL.Image
-	sys.modules['Image'] = PIL.Image
+    import Image
 
 from pkg_resources import resource_filename
 

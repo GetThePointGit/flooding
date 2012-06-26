@@ -21,8 +21,17 @@ Changelog of flooding
 - Updated floding-worker to 0.6.1:
     - Replaced dependency floding_worker.Workflow to flooding_lib.Scenario.
     - created a new initial migrationschema.
-	
-- Updated flooding.settings due import error of PIL.Image 
+
+- Updated flooding-lib to 1.35:
+    - Add breadcrumbs to add files screen in import (#3687)
+    - Make WAITING the default state for new ImportScenarios (#3685)
+    - Large scale code formatting (pep8/pyflakes), down to 0 errors
+      from ~2300
+    - Refactor and test import code some more (move functionality from
+      views into models)
+    - Fixed import of PIL.Image.
+
+- Updated flooding.settings due import error of PIL.Image
 
 
 1.2 (2012-06-15)
