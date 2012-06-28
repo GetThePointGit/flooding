@@ -18,9 +18,10 @@ Changelog of flooding
     bin/django migrate flooding_worker
     bin/django loaddata flooding_worker
 
-- Updated floding-worker to 0.6.1:
+- Updated floding-worker to 0.6.2:
     - Replaced dependency floding_worker.Workflow to flooding_lib.Scenario.
-    - created a new initial migrationschema.
+    - Created a new initial migrationschema.
+    - Removed brokerconfig.py
 
 - Updated flooding-lib to 1.35:
     - Add breadcrumbs to add files screen in import (#3687)
