@@ -5,6 +5,7 @@ Changelog of flooding
 1.3 (unreleased)
 ----------------
 - Tasks to do after update:
+    bin/django loaddata flooding/fixtures/flooding_base_setting.json
     bin/django dbshell
         drop table lizard_flooding_worker_tasktype CASCADE;
         drop table lizard_flooding_worker_workflow CASCADE;
@@ -34,6 +35,8 @@ Changelog of flooding
 
 - Updated flooding.settings due import error of PIL.Image
 
+- Added 'YEAR' setting to flooding_base.Setting for hisssm_160 task
+  (as new record)
 
 1.2 (2012-06-15)
 ----------------
