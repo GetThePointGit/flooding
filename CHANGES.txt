@@ -26,7 +26,7 @@ Changelog of flooding
     - Created a new initial migrationschema.
     - Removed brokerconfig.py
 
-- Updated flooding-lib to 1.38:
+- Updated flooding-lib to 1.39:
     1.35:
     - Add breadcrumbs to add files screen in import (#3687)
     - Make WAITING the default state for new ImportScenarios (#3685)
@@ -53,11 +53,20 @@ Changelog of flooding
     - Coordinates are shown in RD, not WGS84
     - Intervals are shown as '2 d 12:00', not as 2.5
     - Values like '-999' are treated as null values
-
-- Updated flooding.settings due import error of PIL.Image
-
-- Added 'YEAR' setting to flooding_base.Setting for hisssm_160 task
-  (as new record)
+    1.39:
+    We are testing and fixed the following issues:
+    - Restored a scenario.project_id field for the benefit of the old uitvoerder.py scripts
+    - Forgot to set field.value_str instead of field.value for the
+      scenario ID that we hack into the info window by hand
+    - 999 was also sometimes used as a sentinel, just like -999. Ignore it too.
+    - Changed another .project to .main_project
+    - We should really use Unicode everywhere, people use non-ASCII
+      characters and there's no reason why we should crash on them
+    - Added an 'ignore' directory to .gitignore, helpful to put silly
+      temporary files in
+    - Updated flooding.settings due import error of PIL.Image
+    - Added 'YEAR' setting to flooding_base.Setting for hisssm_160 task
+      (as new record)
 
 1.2 (2012-06-15)
 ----------------
