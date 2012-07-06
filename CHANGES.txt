@@ -19,12 +19,15 @@ Changelog of flooding
     bin/django migrate flooding_worker
     bin/django loaddata flooding_worker
 
+    bin/django migrate flooding_lib, but both 0001 and 0009 must be faked!
+
 - Updated floding-worker to 0.6.2:
     - Replaced dependency floding_worker.Workflow to flooding_lib.Scenario.
     - Created a new initial migrationschema.
     - Removed brokerconfig.py
 
-- Updated flooding-lib to 1.35:
+- Updated flooding-lib to 1.38:
+    1.35:
     - Add breadcrumbs to add files screen in import (#3687)
     - Make WAITING the default state for new ImportScenarios (#3685)
     - Large scale code formatting (pep8/pyflakes), down to 0 errors
@@ -32,6 +35,24 @@ Changelog of flooding
     - Refactor and test import code some more (move functionality from
       views into models)
     - Fixed import of PIL.Image.
+    1.36:
+    - Changed scenario fields to null=True to make testing easier
+    - Added ScenarioProject model
+    - Did many changes to many files to make it possible to have
+      a scenario be part of many projects (through ScenarioProject),
+      instead of with the old foreign key
+    - Changed scenario fields to null=True to make testing easier
+    - Added 'color_mapping_name' field to 'Project' model (the field
+      exists yet, fake it on migration).
+    1.37:
+    - Fix issues relating to #3705; obviously import wasn't tested yet and
+      there were several typos and things that couldn't work. Works on my
+      development machine now.
+    1.38:
+    - Solves issues from Trac #3682. In the scenario info window:
+    - Coordinates are shown in RD, not WGS84
+    - Intervals are shown as '2 d 12:00', not as 2.5
+    - Values like '-999' are treated as null values
 
 - Updated flooding.settings due import error of PIL.Image
 
