@@ -5,8 +5,12 @@ Changelog of flooding
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+New versions of the Group import example files. Moved them into the
+flooding site because they are updated now and then, makes it easier
+to do releases.
 
+Therefore, updated to flooding-base 1.26 which doesn't have the
+example files anymore.
 
 1.3 (2012-07-09)
 ----------------
