@@ -26,7 +26,7 @@ Changelog of flooding
     - Created a new initial migrationschema.
     - Removed brokerconfig.py
 
-- Updated flooding-lib to 1.39:
+- Updated flooding-lib to 2.0:
     1.35:
     - Add breadcrumbs to add files screen in import (#3687)
     - Make WAITING the default state for new ImportScenarios (#3685)
@@ -67,6 +67,9 @@ Changelog of flooding
     - Updated flooding.settings due import error of PIL.Image
     - Added 'YEAR' setting to flooding_base.Setting for hisssm_160 task
       (as new record)
+    2.0:
+    - Fix tickets #3684 and #3711
+    - Version bump just because
 
 1.2 (2012-06-15)
 ----------------
