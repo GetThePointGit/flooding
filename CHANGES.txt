@@ -5,8 +5,17 @@ Changelog of flooding
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+Trunk: updated to flooding-lib 2.0.1, which is a hotfix branch.
 
+Approval objects will be completely changed. Because of this, all the
+old ones need to be cleared from the database. First run all the
+migrations of flooding_lib, then the migrations of approvaltool.
+
+Updated flooding-base to 1.27 (cleanup).
+
+After release, an ApprovalType for ROR should be set up, and the ROR
+project should be changed so that it uses that type by default (right
+now that's a manual database action).
 
 1.4 (2012-07-09)
 ----------------
