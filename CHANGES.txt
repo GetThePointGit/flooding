@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.5 (unreleased)
-----------------
+1.4.1 (2012-07-23)
+------------------
 
 Trunk: updated to flooding-lib 2.0.1, which is a hotfix branch.
 
