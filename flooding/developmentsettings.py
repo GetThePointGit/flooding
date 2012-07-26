@@ -1,21 +1,12 @@
-import logging
-
-# Set up logging BEFORE importing the base settings.
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(name)s %(levelname)s %(message)s')
+from lizard_ui.settingshelper import setup_logging
 
 from flooding.settings import *
+
+LOGGING = setup_logging(BUILDOUT_DIR)
 
 INTERNAL_IPS = ('127.0.0.1',)
 
 DEBUG = True
-
-#MIDDLEWARE_CLASSES += (
-#    'debug_toolbar.middleware.DebugToolbarMiddleware',
-#    )
-
-# INSTALLED_APPS += ('debug_toolbar',)
 
 DATABASES = {
     'default': {

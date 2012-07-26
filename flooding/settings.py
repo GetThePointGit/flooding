@@ -7,10 +7,6 @@
 # if you ever put personal settings into this file or into
 # developmentsettings.py!
 
-from lizard_ui.settingshelper import STATICFILES_FINDERS
-STATICFILES_FINDERS = STATICFILES_FINDERS
-
-
 import logging
 import os
 import tempfile
@@ -23,6 +19,9 @@ try:
     sys.modules['Image'] = PIL.Image
 except ImportError:
     import Image
+
+from lizard_ui.settingshelper import setup_logging
+from lizard_ui.settingshelper import STATICFILES_FINDERS
 
 from pkg_resources import resource_filename
 
@@ -178,14 +177,8 @@ INSTALLED_APPS = (
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
-# File logging for production.  If logging is already defined (for instance in
-# developmentsettings.py, this won't have any effect.
-logging.basicConfig(
-    level=logging.DEBUG,
-    format=('=' * 78 + '\n' +
-            '%(asctime)s %(name)s %(levelname)s\n%(message)s'),
-    filename=os.path.join(BUILDOUT_DIR, 'var', 'log', 'django.log'),
-    filemode='a')
+LOGGING = setup_logging(
+    BUILDOUT_DIR, console_level=None, file_level='WARN', sentry_level='WARN')
 
 # We create a handler to be able to show the tail of the Django log to the
 # user. The handler implements the tail through up to two log files that are
