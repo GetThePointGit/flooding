@@ -5,7 +5,7 @@ Changelog of flooding
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Increased flooding-lib to 2.3.
 
 
 1.4.1 (2012-07-23)
