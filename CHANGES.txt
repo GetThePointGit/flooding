@@ -5,7 +5,8 @@ Changelog of flooding
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Increased flooding-lib to 2.4. The import new scenario page wasn't
+  working, this includes a quick fix.
 
 
 1.5 (2012-08-10)
