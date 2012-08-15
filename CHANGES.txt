@@ -5,7 +5,9 @@ Changelog of flooding
 1.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
+Increase to 2.5.2. Improvements to the Excel import/export. Also fixes
+a bug where a scenario's status didn't update after checking its
+approval rules.
 
 
 1.7 (2012-08-14)
