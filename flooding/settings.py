@@ -36,6 +36,8 @@ SETTINGS_DIR = os.path.dirname(os.path.realpath(__file__))
 # to place all collected static files.
 BUILDOUT_DIR = os.path.abspath(os.path.join(SETTINGS_DIR, '..'))
 
+# Downloadable Excel files
+EXCEL_DIRECTORY = os.path.join(BUILDOUT_DIR, "var", "excel")
 
 # Triple blast.  Needed to get matplotlib from barfing on the server: it needs
 # to be able to write to some directory.
