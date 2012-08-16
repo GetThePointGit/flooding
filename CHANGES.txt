@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.9 (unreleased)
+1.9 (2012-08-16)
 ----------------
 
 Fixes to Excel export/import, update to flooding-lib 2.6.1. Time to
