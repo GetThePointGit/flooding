@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.conf.urls.defaults import include
-from django.conf.urls.defaults import patterns
+from django.conf.urls.defaults import patterns, url
 from django.contrib import admin
 
 import flooding_base.urls
@@ -8,6 +8,8 @@ import flooding_lib.urls
 import flooding_presentation.urls
 import flooding_visualization.urls
 import flooding_worker.urls
+
+from flooding.views import ScenarioWorkflowView
 
 admin.autodiscover()
 
@@ -19,6 +21,12 @@ urlpatterns = patterns(
     (r'^presentation/', include(flooding_presentation.urls)),
     (r'^worker/', include(flooding_worker.urls)),
     (r'', include(flooding_base.urls)),
+    
+    url(r'^scenarios_processing$', ScenarioWorkflowView.as_view(),
+        name="scenarios_processing"),
+
+    url(r'^execute$', ScenarioWorkflowView.as_view(),
+        name="execute_scenario"),
     )
 
 
