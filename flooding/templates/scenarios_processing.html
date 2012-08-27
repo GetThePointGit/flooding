@@ -77,4 +77,15 @@ function submitForm(form_id) {
       {% endfor %}
     </tbody>
 </table>
+
+<p />
+<table><tr>
+{% for i in steps %}
+{% if i != step %}
+ <td><a href='/scenarios_processing/step/{{ i }}'>{{ i }}</a></td>
+{% else %}
+ <td>{{ i }}</td>
+{% endif %}
+{% endfor %}
+</tr></table>
 {% endblock %}

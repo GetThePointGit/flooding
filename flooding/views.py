@@ -24,8 +24,14 @@ class ScenarioWorkflowView(View):
     """
     template = 'scenarios_processing.html'
 
-    def get(self, request, stap=1, amount_per_stap=20):
-        scenarios = libmodels.Scenario.objects.all()
+    def get(self, request, step=1, amount_per_step=4):
+        all_scenarios = libmodels.Scenario.objects.all()
+        step = int(step)
+        sl = slice((step - 1) * amount_per_step, step * amount_per_step)
+        scenarios = all_scenarios[sl]
+
+        from_indexes = range(0, all_scenarios.count(), amount_per_step)
+
         processing = {}
 
         for scenario in scenarios:
@@ -46,8 +52,9 @@ class ScenarioWorkflowView(View):
             processing.update({scenario.id: scenario_workflow})
 
         context = {'processing': processing,
-                   'stap': stap,
-                   'amount_per_stap': amount_per_stap}
+                   'step': step,
+                   'steps': range(1, len(from_indexes) + 1),
+                   'amount_per_stap': amount_per_step}
 
         return render_to_response(self.template, context)
 

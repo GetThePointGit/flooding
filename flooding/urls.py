@@ -22,7 +22,10 @@ urlpatterns = patterns(
     (r'^worker/', include(flooding_worker.urls)),
     (r'', include(flooding_base.urls)),
     
-    url(r'^scenarios_processing$', ScenarioWorkflowView.as_view(),
+    url(r'^scenarios_processing/$', ScenarioWorkflowView.as_view(),
+        name="scenarios_processing"),
+
+    url(r'^scenarios_processing/step/(?P<step>\d+)$', ScenarioWorkflowView.as_view(),
         name="scenarios_processing"),
 
     url(r'^execute$', ScenarioWorkflowView.as_view(),
