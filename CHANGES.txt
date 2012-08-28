@@ -5,7 +5,30 @@ Changelog of flooding
 1.14 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Increase flooding-lib to 2.10. Changes since the previous version:
+
+- Added functionality to add a workflow_template to new scenario.
+
+- Added migration to create default workflow_templates.
+
+- Add a 'Goedkeuring' sheet to the Excel metadata export. It shows
+  scenarioid, scenario identification and scenario name, and the
+  approval status for each of the applicable approval rules, plus
+  remarks in an extra column. Code for generation and importing is now
+  done and unit testing, but not tested "for real" yet because we will
+  first make the necessary user interface in a branch.
+
+- Added a 'flooding_lib.sharedproject' sub-app that will hold pages
+  and models to do with the ROR and Landelijk gebruik projects.
+  A 'ROR dashboard' is now available under /flooding/shared/ror/,
+  down- and uploading Excel files per province works.
+
+- Make it mandatory to first collect all the necessary metadata before
+  a scenario can be shared.
+
+- Automatically set the value for the 'Metadata complete' approval
+  rule when a scenario is accepted into one of the national projects.
+
 
 
 1.13 (2012-08-24)
