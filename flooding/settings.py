@@ -162,6 +162,7 @@ INSTALLED_APPS = (
                      # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
+    'flooding_lib.sharedproject',
     'staticfiles',
     'south',
     'django.contrib.admin',
