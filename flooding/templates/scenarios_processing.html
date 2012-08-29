@@ -45,7 +45,7 @@ function submitForm(form_id) {
       <th>Laatste logging</th>
     </thead>
     <tbody>
-      {% for process in processing.values %}
+      {% for process in processing %}
       <tr>
 	<td>
           <form id="{{process.scenario_id }}" action="POST" onsubmit="return submitForm({{ process.scenario_id }});">{% csrf_token %}

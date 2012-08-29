@@ -24,15 +24,15 @@ class ScenarioWorkflowView(View):
     """
     template = 'scenarios_processing.html'
 
-    def get(self, request, step=1, amount_per_step=4):
-        all_scenarios = libmodels.Scenario.objects.all()
+    def get(self, request, step=1, amount_per_step=25):
+        all_scenarios = libmodels.Scenario.objects.all().order_by("-id")
         step = int(step)
         sl = slice((step - 1) * amount_per_step, step * amount_per_step)
         scenarios = all_scenarios[sl]
 
         from_indexes = range(0, all_scenarios.count(), amount_per_step)
 
-        processing = {}
+        processing = []
 
         for scenario in scenarios:
             workflows = workermodels.Workflow.objects.filter(
@@ -49,7 +49,7 @@ class ScenarioWorkflowView(View):
                 scenario_workflow.update({
                         'workflows_count': workflows.count(),
                         'workflow': workflow})
-            processing.update({scenario.id: scenario_workflow})
+            processing.append(scenario_workflow)
 
         context = {'processing': processing,
                    'step': step,
