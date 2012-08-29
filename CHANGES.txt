@@ -5,9 +5,16 @@ Changelog of flooding
 1.15 (unreleased)
 -----------------
 
-Increased flooding-lib to 2.11.2 because the workflow_template field
-wasn't set yet.
+- Increased flooding-lib to 2.11.2 because the workflow_template field
+  wasn't set yet.
 
+- Added a template to view the flooding scenarios, workflows, loggings.
+
+- Added functionality to run scenario from GUI.
+
+- Updated flooding-worker to 1.0
+
+- Sort scenarios by id in the template scenarios_processing.html.
 
 1.14.1 (2012-08-29)
 -------------------
