@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.15 (unreleased)
------------------
+1.14.1 (2012-08-29)
+-------------------
 
 Increased flooding-lib to 2.11.1 for a small fix (create excel files
 management command didn't work).
