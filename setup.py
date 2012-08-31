@@ -19,6 +19,7 @@ install_requires = [
     'flooding-base >= 1.25',
     'flooding-lib >= 1.30',
     'flooding-worker >= 0.4',
+    'nens >= 1.11',
     'supervisor',
     'south',
     ],

@@ -16,6 +16,8 @@ Changelog of flooding
 
 - Sort scenarios by id in the template scenarios_processing.html.
 
+- Updated nens package to 1.11.
+
 1.14.1 (2012-08-29)
 -------------------
 
