@@ -214,6 +214,57 @@ SOBEK_PROJECT_ROOT = ''
 #root of temporary directory for flooding tasks
 TMP_ROOT = 'c:/temp'
 
+#queue's setting for flooding-worke
+QUEUES = {
+    "default": {
+        "exchange": "",
+        "binding_key": "default"},
+    "logging": {
+        "exchange": "router",
+        "binding_key": "logging"},
+    "failed": {
+        "exchange": "router",
+        "binding_key": "failed"},
+    "sort": {
+        "exchange": "router",
+        "binding_key": "sort"},
+    "120": {
+        "exchange": "router",
+        "binding_key": "120"},
+    "130": {
+        "exchange": "router",
+        "binding_key": "130"},
+    "132": {
+        "exchange": "router",
+        "binding_key": "132"},
+    "134": {
+        "exchange": "router",
+        "binding_key": "134"},
+    "150": {
+        "exchange": "router",
+        "binding_key": "150"},
+    "155": {
+        "exchange": "router",
+        "binding_key": "155"},
+    "160": {
+        "exchange": "router",
+        "binding_key": "160"},
+    "162": {
+        "exchange": "router",
+        "binding_key": "162"},
+    "180": {
+        "exchange": "router",
+        "binding_key": "180"},
+    "185": {
+        "exchange": "router",
+        "binding_key": "185"},
+    "900": {
+        "exchange": "router",
+        "binding_key": "900"},
+}
+
+HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185"]
+
 try:
     from flooding.localproductionsettings import *
     # For local production overrides (DB passwords, for instance)

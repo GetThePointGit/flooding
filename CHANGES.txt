@@ -5,8 +5,17 @@ Changelog of flooding
 1.18 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Increased flooding-lib to 2.14
 
+Changes:
+Add functionality for auto-start of seanrio's calculation
+on create and import a new scenario.
+
+Increased flooding-worker to 1.2
+
+Changes:
+Close connection before spawning subprocess and on the end 
+of the task.
 
 1.17 (2012-09-05)
 -----------------
