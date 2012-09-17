@@ -25,6 +25,10 @@ class ScenarioWorkflowView(View):
     template = 'scenarios_processing.html'
 
     def get(self, request, step=1, amount_per_step=25):
+
+        if request.user.is_superuser is False:
+            return render_to_response('403.html')
+
         all_scenarios = libmodels.Scenario.objects.all().order_by("-id")
         step = int(step)
         sl = slice((step - 1) * amount_per_step, step * amount_per_step)
@@ -46,9 +50,8 @@ class ScenarioWorkflowView(View):
 
             if workflows.exists():
                 workflow = workflows.latest('tcreated')
-                scenario_workflow.update({
-                        'workflows_count': workflows.count(),
-                        'workflow': workflow})
+                scenario_workflow.update({'workflows_count': workflows.count(),
+                                          'workflow': workflow})
             processing.append(scenario_workflow)
 
         context = {'processing': processing,
@@ -59,11 +62,13 @@ class ScenarioWorkflowView(View):
         return render_to_response(self.template, context)
 
     def post(self, request):
+        if request.user.is_superuser is False:
+            return render_to_response('403.html')
         scenario_id = request.POST.get('scenario_id')
         template_id = request.POST.get('template_id')
         success = executor.start_workflow(scenario_id, template_id)
         message = "Scenario {0} is {1} in de wachtrij geplaatst."
-        if success == False:
+        if success is False:
             message = message.format(scenario_id, "NIET")
         else:
             message = message.format(scenario_id, "")
