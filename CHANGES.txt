@@ -5,7 +5,18 @@ Changelog of flooding
 1.19 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Increased flooding-lib to 2.15.
+Changes:
+Added functions to walk a directory tree structure and scan all its
+files, even files included in .zip files.
+
+Added functions that check if any of those have is an .asc or .inc
+with a comment line (starting with /*), and remove it.
+
+Also add a management command for that.
+
+Also add that functionality to uploaded files in the importtool.
+
 
 
 1.18 (2012-09-07)
@@ -20,7 +31,7 @@ on create and import a new scenario.
 Increased flooding-worker to 1.2
 
 Changes:
-Close connection before spawning subprocess and on the end 
+Close connection before spawning subprocess and on the end
 of the task.
 
 1.17 (2012-09-05)
