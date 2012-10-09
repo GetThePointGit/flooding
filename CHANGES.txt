@@ -5,6 +5,12 @@ Changelog of flooding
 1.19 (unreleased)
 -----------------
 
+Increased flooding-lib to 2.17.2. Changes:
+Fix to a bug with deleting comment lines at import time.
+
+A "Breach info" page for ROR/Landelijk Gebruik approvers that shows
+some summary info per scenario at a breach location.
+
 Increased flooding-lib to 2.16.
 Changes:
 If there are ROR scenarios under a breach, and user is allowed to see
