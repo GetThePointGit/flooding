@@ -5,7 +5,7 @@ Changelog of flooding
 1.21 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Configured task CALCULATE_SCENARIO_STATISTICS.
 
 
 1.20 (2012-10-10)
