@@ -5,7 +5,18 @@ Changelog of flooding
 1.21 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Increased flooding-lib to 2.19. Changes:
+Added an OpenStreetMap background for the max water depth
+images. Synchronized panning and zooming, and checkboxes to turn them
+on and off (in case there are many on one page and the user wants to
+compare two).
+
+Fix a bug with Excel metadata downloads. This was caused by new mixins
+for all class based views, that set all kwargs on the view and always
+add a permission manager. This meant that the kwargs weren't sent as
+arguments anymore, resulting in an exception. It also meant that the
+@receives_permission_manager decorators on class based views can be
+removed.
 
 
 1.20 (2012-10-10)
