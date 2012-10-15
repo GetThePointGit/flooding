@@ -5,7 +5,9 @@ Changelog of flooding
 1.22 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Increase flooding-worker to 1.5
+Added task TASK_CALCULATE_STATISTICS.
+Fixed error on model's combination in openbreach.py.
 
 
 1.21 (2012-10-15)
