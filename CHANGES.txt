@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.22 (unreleased)
+1.22 (2012-10-15)
 -----------------
 
 - Increase flooding-worker to 1.5
