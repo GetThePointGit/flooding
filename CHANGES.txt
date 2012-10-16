@@ -5,7 +5,7 @@ Changelog of flooding
 1.24 (unreleased)
 -----------------
 
-- Pinned lizard-worker 0.1.
+- Pinned lizard-worker 0.2.
 
 - Removed flooding-worker.
 
