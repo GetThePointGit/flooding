@@ -5,6 +5,8 @@ Changelog of flooding
 1.24 (unreleased)
 -----------------
 
+- Configured flooding_lib.perform_task module.
+
 - Removed sentry handler.
 
 - Pinned lizard-worker 0.2.
