@@ -214,7 +214,7 @@ SOBEK_PROJECT_ROOT = ''
 #root of temporary directory for flooding tasks
 TMP_ROOT = 'c:/temp'
 
-PERFORM_TASK_MODULE = "flooding_lib.perform_task"
+PERFORM_TASK_MODULE = "flooding_lib.tasks.perform_task"
 PERFORM_TASK_FUNCTION = "perform_task"
 
 #queue's setting for flooding-worke
