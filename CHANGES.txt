@@ -5,6 +5,8 @@ Changelog of flooding
 1.24 (unreleased)
 -----------------
 
+- Removed sentry handler.
+
 - Pinned lizard-worker 0.2.
 
 - Removed flooding-worker.

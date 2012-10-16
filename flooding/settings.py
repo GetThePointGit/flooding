@@ -181,7 +181,7 @@ INSTALLED_APPS = (
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 LOGGING = setup_logging(
-    BUILDOUT_DIR, console_level=None, file_level='WARN', sentry_level='WARN')
+    BUILDOUT_DIR, console_level=None, file_level='WARN')
 
 # We create a handler to be able to show the tail of the Django log to the
 # user. The handler implements the tail through up to two log files that are
