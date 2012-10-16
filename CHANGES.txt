@@ -5,7 +5,13 @@ Changelog of flooding
 1.24 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Pinned lizard-worker 0.1.
+
+- Removed flooding-worker.
+
+- Increase flooding-lib to 2.20
+Added tasks and perform_task.py.
+Changed references flooding_worker to lizard_worker.
 
 
 1.23 (2012-10-15)

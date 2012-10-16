@@ -156,9 +156,9 @@ INSTALLED_APPS = (
     'flooding_presentation',
     'flooding_visualization',  # Must be below flooding_presentation
     'flooding_lib.tools.approvaltool',
-    'flooding_worker',
+    'lizard_worker',
     'flooding_lib',  # Must be below flooding_visualization,
-                     # flooding_presentation, flooding_worker and
+                     # flooding_presentation, lizard_worker and
                      # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
@@ -213,6 +213,9 @@ SOBEK_PROGRAM_ROOT = ''
 SOBEK_PROJECT_ROOT = ''
 #root of temporary directory for flooding tasks
 TMP_ROOT = 'c:/temp'
+
+PERFORM_TASK_MODULE = "flooding-lib.perform_task"
+PERFORM_TASK_FUNCTION = "perform_task"
 
 #queue's setting for flooding-worke
 QUEUES = {

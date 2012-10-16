@@ -7,8 +7,8 @@ from django.utils import simplejson as json
 from django.shortcuts import render_to_response
 from django.views.generic import View
 
-from flooding_worker import executor
-from flooding_worker import models as workermodels
+from lizard_worker import executor
+from lizard_worker import models as workermodels
 
 from flooding_lib import models as libmodels
 

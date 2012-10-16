@@ -7,7 +7,7 @@ import flooding_base.urls
 import flooding_lib.urls
 import flooding_presentation.urls
 import flooding_visualization.urls
-import flooding_worker.urls
+import lizard_worker.urls
 
 from flooding.views import ScenarioWorkflowView
 
@@ -19,7 +19,7 @@ urlpatterns = patterns(
     (r'^flooding/', include(flooding_lib.urls)),
     (r'^visualization/', include(flooding_visualization.urls)),
     (r'^presentation/', include(flooding_presentation.urls)),
-    (r'^worker/', include(flooding_worker.urls)),
+    (r'^worker/', include(lizard_worker.urls)),
     (r'', include(flooding_base.urls)),
     
     url(r'^scenarios_processing/$', ScenarioWorkflowView.as_view(),

@@ -18,7 +18,7 @@ install_requires = [
     'gunicorn',
     'flooding-base >= 1.25',
     'flooding-lib >= 1.30',
-    'flooding-worker >= 0.4',
+    'lizard-worker',
     'nens >= 1.11',
     'supervisor',
     'south',
