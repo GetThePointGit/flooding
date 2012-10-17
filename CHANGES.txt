@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.26 (unreleased)
+1.26 (2012-10-17)
 -----------------
 
 Increase flooding-lib to 2.22:
