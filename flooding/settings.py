@@ -202,6 +202,7 @@ SYMBOLS_DIR = resource_filename(
 EXTERNAL_PRESENTATION_MOUNTED_DIR = (
     '/mnt/flooding/Flooding/presentationdatabase_totaal')
 EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
+TMP_DIR = '/mnt/flooding/Flooding/tmp_dir_used_by_site'
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
 #location of directories for task execution. Pelase configure to local
