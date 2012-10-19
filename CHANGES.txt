@@ -5,7 +5,30 @@ Changelog of flooding
 1.26 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Increase flooding-base to 1.32:
+Add Javascript that can open a specific project/scenario upon loading
+the homepage.
+
+Get the information about which scenario to open from the session (it
+is set in a view in flooding-lib).
+
+Increase flooding-lib to 2.23:
+Adapt comment line removing functions so that they can also be called
+on individual files, and don't depend on the size of /tmp on the
+webserver anymore.
+
+Change the zipfile creation functions so that they don't try to do
+everything in memory.
+
+Add a link (/flooding/preload/<project_id>/</scenario_id>/) that puts
+relevant information in the session and then redirects to the front
+page. Code in flooding-base 1.32 then causes the right scenario to
+open.
+
+Increase flooding-lib to 2.22:
+Replaced the parameter 'scenario_id' with 'body' in perform_task function of
+'tasks.perform_task' module.
+
 
 
 1.25 (2012-10-17)
