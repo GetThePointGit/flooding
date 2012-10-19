@@ -265,12 +265,15 @@ QUEUES = {
     "190": {
         "exchange": "router",
         "binding_key": "190"},
+    "200": {
+        "exchange": "router",
+        "binding_key": "200"},
     "900": {
         "exchange": "router",
         "binding_key": "900"},
 }
 
-HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190"]
+HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200"]
 
 try:
     from flooding.localproductionsettings import *
