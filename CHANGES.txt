@@ -25,11 +25,6 @@ relevant information in the session and then redirects to the front
 page. Code in flooding-base 1.32 then causes the right scenario to
 open.
 
-Increase flooding-lib to 2.22:
-Replaced the parameter 'scenario_id' with 'body' in perform_task function of
-'tasks.perform_task' module.
-
-
 
 1.26 (2012-10-17)
 -----------------
