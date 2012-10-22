@@ -202,6 +202,7 @@ SYMBOLS_DIR = resource_filename(
 EXTERNAL_PRESENTATION_MOUNTED_DIR = (
     '/mnt/flooding/Flooding/presentationdatabase_totaal')
 EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
+TMP_DIR = '/mnt/flooding/Flooding/tmp_dir_used_by_site'
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
 #location of directories for task execution. Pelase configure to local
@@ -264,12 +265,15 @@ QUEUES = {
     "190": {
         "exchange": "router",
         "binding_key": "190"},
+    "200": {
+        "exchange": "router",
+        "binding_key": "200"},
     "900": {
         "exchange": "router",
         "binding_key": "900"},
 }
 
-HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190"]
+HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200"]
 
 # TODO: configure your broker settings
 # BROKER_SETTINGS = {
