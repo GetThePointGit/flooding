@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.28 (unreleased)
------------------
+1.27.1 (2012-10-22)
+-------------------
 
 Increase flooding-lib to 2.23.1 for a tiny change to the breach info
 page (so that links to scenarios actually work...)
