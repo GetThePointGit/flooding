@@ -8,6 +8,9 @@ Usage, etc.
 More details in src/flooding/USAGE.txt .
 
 
+Works with RabbitMQ version 2.8.7.
+
+
 WARNING: buildout run on jupiter
 --------------------------------
 

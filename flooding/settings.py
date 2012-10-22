@@ -271,6 +271,16 @@ QUEUES = {
 
 HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190"]
 
+# TODO: configure your broker settings
+# BROKER_SETTINGS = {
+#     "BROKER_HOST": "localhost",
+#     "BROKER_PORT": 5672,
+#     "BROKER_USER": "",
+#     "BROKER_PASSWORD": "",
+#     "BROKER_VHOST": "flooding-test",
+#     "HEARTBEAT": False
+# }
+
 try:
     from flooding.localproductionsettings import *
     # For local production overrides (DB passwords, for instance)
