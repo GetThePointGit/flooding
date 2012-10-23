@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.29 (unreleased)
------------------
+1.28.2 (2012-10-23)
+-------------------
 
 - Minor fix for bin/fab staging_taskserver update_task.
 
