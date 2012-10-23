@@ -2,14 +2,20 @@ Changelog of flooding
 ===================================================
 
 
-1.28 (unreleased)
+1.29 (unreleased)
+-----------------
+
+- Pinned 2.24.1: the page exporteren has been updated.
+
+
+1.28 (2012-10-23)
 -----------------
 
 - Added experimental fabfile functions for task 200 server.
 
 - Added buildout config file for task 200 server.
 
-- Pinned 2.24.1: the page exporteren has changes.
+- Add correct 'EXTERNAL_RESULTS_MOUNTED_DIR' etc to stagingsettings
 
 
 1.27.1 (2012-10-22)

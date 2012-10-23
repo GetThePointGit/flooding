@@ -1,5 +1,10 @@
 from flooding.settings import *
 
+EXTERNAL_PRESENTATION_MOUNTED_DIR = (
+    '/mnt/flooding/Flooding/presentationdatabase_totaal-staging')
+EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten-staging'
+
+
 DEBUG = True
 
 DATABASES = {
