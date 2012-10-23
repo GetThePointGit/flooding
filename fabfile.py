@@ -1,5 +1,6 @@
 from sitesetup.fab.config import init_file
 from sitesetup.fab.tasks import *
+from fabric.context_managers import cd
 from fabric.decorators import task
 from fabric.operations import sudo
 
@@ -32,5 +33,6 @@ def update_task():
         sudo("bin/buildout", user='buildout')
         sudo("bin/django syncdb", user='buildout')
         sudo("bin/django migrate", user='buildout')
-        sudo("bin/supervisorctl stop gunicorn", user='buildout') # if it runs
-        sudo("bin/supervisorctl restart celeryd", user='buildout')  # Only for task server
+        # sudo("bin/supervisorctl stop gunicorn", user='buildout') # if it runs
+        # sudo("bin/supervisorctl restart celeryd", user='buildout')  # Only for task server
+        sudo("bin/supervisorctl restart task_200", user='buildout')  # Only for task server
