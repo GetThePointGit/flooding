@@ -5,7 +5,8 @@ Changelog of flooding
 1.29 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Pinned lizard-worker to 0.5:
+    Fixed error in reque_failed_message function by empty MAX_FEAILURE_TMP in body.
 
 
 1.28.2 (2012-10-23)
