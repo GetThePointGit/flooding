@@ -10,6 +10,13 @@ Changelog of flooding
 - Added buildout config file for task 200 server.
 
 
+1.27.1 (2012-10-22)
+-------------------
+
+Increase flooding-lib to 2.23.1 for a tiny change to the breach info
+page (so that links to scenarios actually work...)
+
+
 1.27 (2012-10-19)
 -----------------
 
