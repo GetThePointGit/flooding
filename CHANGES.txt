@@ -7,6 +7,9 @@ Changelog of flooding
 
 - Minor fix for bin/fab staging_taskserver update_task.
 
+- Pinned lizard worker 0.4: The export page uses new features from
+  lizard worker.
+
 
 1.28.1 (2012-10-23)
 -------------------
