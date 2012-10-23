@@ -11,6 +11,19 @@ More details in src/flooding/USAGE.txt .
 Works with RabbitMQ version 2.8.7.
 
 
+Install production / staging server
+-----------------------------------
+
+Linux task machine (i.e. task 200). The task server checks out the
+master trunk of flooding.
+
+Init
+    $ bin/fab staging_taskserver init
+Update
+    $ bin/fab staging_taskserver update_task
+
+
+
 WARNING: buildout run on jupiter
 --------------------------------
 
