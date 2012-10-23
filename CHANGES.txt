@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.28 (unreleased)
+1.28 (2012-10-23)
 -----------------
 
 - Added experimental fabfile functions for task 200 server.
