@@ -9,6 +9,8 @@ Changelog of flooding
 
 - Added buildout config file for task 200 server.
 
+- Pinned 2.24.1: the page exporteren has changes.
+
 
 1.27.1 (2012-10-22)
 -------------------
