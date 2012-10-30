@@ -5,9 +5,10 @@ Changelog of flooding
 1.31 (unreleased)
 -----------------
 
-- Pinned lizard-worker to 0.6:
+- Pinned lizard-worker to 0.7:
     Added default value to scenario_type in body.
     Added scenario_type field to Workflow model.
+    Created migration schemas (fake initial schema on update).
 
 
 1.30 (2012-10-30)
