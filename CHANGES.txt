@@ -2,13 +2,20 @@ Changelog of flooding
 ===================================================
 
 
-1.29 (unreleased)
+1.30 (unreleased)
 -----------------
 
 - Added tasks 210 and 220 to staging-task-200.cfg.
 
 - Added threedilib to pins (does nothing yet without flooding-lib with
   task 210, 220)
+
+
+1.29 (2012-10-23)
+-----------------
+
+- Pinned lizard-worker to 0.5:
+    Fixed error in reque_failed_message function by empty MAX_FEAILURE_TMP in body.
 
 
 1.28.2 (2012-10-23)
