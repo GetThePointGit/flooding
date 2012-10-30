@@ -2,16 +2,25 @@ Changelog of flooding
 ===================================================
 
 
-1.30 (unreleased)
+1.31 (unreleased)
 -----------------
-
-- Pinnend lizard-lib to 2.24.2:
-    Fixed error on import perform_task module
 
 - Pinned lizard-worker to 0.6:
     Added default value to scenario_type in body.
     Added scenario_type field to Workflow model.
 
+
+1.30 (2012-10-30)
+-----------------
+
+- Added tasks 210 and 220 to staging-task-200.cfg.
+
+- Added threedilib to pins (does nothing yet without flooding-lib with
+  task 210, 220)
+
+- Pinned flooding-lib 2.25 (task 210, 220)
+
+- Pinned flooding-lib to 2.26 (enhanced calculate scenario statistics task)
 
 1.29 (2012-10-23)
 -----------------
