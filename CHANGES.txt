@@ -12,6 +12,7 @@ Changelog of flooding
 
 - Pinned flooding-lib 2.25 (task 210, 220)
 
+- Pinned flooding-lib to 2.26 (enhanced calculate scenario statistics task)
 
 1.29 (2012-10-23)
 -----------------
