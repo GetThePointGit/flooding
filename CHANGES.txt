@@ -10,6 +10,9 @@ Changelog of flooding
     Added scenario_type field to Workflow model.
     Created migration schemas (fake initial schema on update).
 
+- Pinned flooding-lib to 2.27:
+    Replaced os.sep with '/' due problem in windows.
+
 
 1.30 (2012-10-30)
 -----------------
