@@ -5,7 +5,12 @@ Changelog of flooding
 1.30 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Pinnend lizard-lib to 2.24.2:
+    Fixed error on import perform_task module
+
+- Pinned lizard-worker to 0.6:
+    Added default value to scenario_type in body.
+    Added scenario_type field to Workflow model.
 
 
 1.29 (2012-10-23)
