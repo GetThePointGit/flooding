@@ -22,6 +22,8 @@ Init
 Update
     $ bin/fab staging_taskserver update_task
 
+See staging-task-200.cfg as an example, it actually serves tasks 200,
+210 and 220.
 
 
 WARNING: buildout run on jupiter
@@ -35,6 +37,7 @@ as root, first unmount ('umount') the share::
 After buildout finished correctly, mount it again as root::
 
   #> mount /srv/flooding.lizardsystem.nl/var/external_data
+
 
 Development installation
 ------------------------

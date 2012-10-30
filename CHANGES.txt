@@ -5,7 +5,10 @@ Changelog of flooding
 1.29 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Added tasks 210 and 220 to staging-task-200.cfg.
+
+- Added threedilib to pins (does nothing yet without flooding-lib with
+  task 210, 220)
 
 
 1.28.2 (2012-10-23)
