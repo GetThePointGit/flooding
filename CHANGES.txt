@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.31 (unreleased)
+1.31 (2012-10-31)
 -----------------
 
 - Pinned lizard-worker to 0.7:
