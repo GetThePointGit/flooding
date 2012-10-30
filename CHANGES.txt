@@ -10,6 +10,8 @@ Changelog of flooding
 - Added threedilib to pins (does nothing yet without flooding-lib with
   task 210, 220)
 
+- Pinned flooding-lib 2.25 (task 210, 220)
+
 
 1.29 (2012-10-23)
 -----------------
