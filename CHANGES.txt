@@ -2,14 +2,24 @@ Changelog of flooding
 ===================================================
 
 
-1.31 (unreleased)
+1.32 (unreleased)
 -----------------
 
-- Flooding-lib to 2.27:
-  Replaced os.sep with '/' due problem in windows.
 - Flooding-lib to 2.28:
   Fix problems with util/flshinc. Apparently there is more variety in
   the exact format of FLS files than I thought.
+
+
+1.31 (2012-10-31)
+-----------------
+
+- Pinned lizard-worker to 0.7:
+    Added default value to scenario_type in body.
+    Added scenario_type field to Workflow model.
+    Created migration schemas (fake initial schema on update).
+
+- Pinned flooding-lib to 2.27:
+    Replaced os.sep with '/' due problem in windows.
 
 
 1.30 (2012-10-30)
