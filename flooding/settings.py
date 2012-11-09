@@ -268,12 +268,18 @@ QUEUES = {
     "200": {
         "exchange": "router",
         "binding_key": "200"},
+    "210": {
+        "exchange": "router",
+        "binding_key": "210"},
+    "220": {
+        "exchange": "router",
+        "binding_key": "220"},
     "900": {
         "exchange": "router",
         "binding_key": "900"},
 }
 
-HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200"]
+HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200", "210", "220"]
 
 # TODO: configure your broker settings
 # BROKER_SETTINGS = {
