@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.33 (unreleased)
+1.33 (2012-11-09)
 -----------------
 
 Flooding-lib to 2.29, small fixes in the scenario info window:
