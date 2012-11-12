@@ -5,7 +5,7 @@ Changelog of flooding
 1.34 (unreleased)
 -----------------
 
-- Pinned threedilib 0.2: new colors for 3Di results.
+- Pinned threedilib 0.3: new colors for 3Di results, detailed maps.
 
 
 1.33 (2012-11-09)
