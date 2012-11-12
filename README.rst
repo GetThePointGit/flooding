@@ -25,6 +25,10 @@ Update
 See staging-task-200.cfg as an example, it actually serves tasks 200,
 210 and 220.
 
+Problems can arise when installing netcdf4. Try:
+
+    $ sudo apt-get install libhdf5-serial-dev libnetcdf-dev
+
 
 WARNING: buildout run on jupiter
 --------------------------------
