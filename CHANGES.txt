@@ -5,7 +5,7 @@ Changelog of flooding
 1.36 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Task 220 now works correctly.
 
 
 1.35 (2012-11-12)
