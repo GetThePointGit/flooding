@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.36 (unreleased)
+1.36 (2012-11-13)
 -----------------
 
 - Task 220 now works correctly.
