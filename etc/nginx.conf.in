@@ -32,6 +32,14 @@ server {
        alias ${buildout:directory}/var/excel/shared/ ;
     }
 
+    location /flooding/excel/ {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        proxy_pass http://localhost:${serverconfig:gunicorn-port};
+        proxy_read_timeout 300;
+    }
+
     location / {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header Host $http_host;
