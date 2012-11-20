@@ -6,12 +6,17 @@ Changelog of flooding
 -----------------
 
 Updates:
-    flooding-lib to 2.32, 2.33. 
+    flooding-lib to 2.32, 2.33.
         - Added functionality to filter scenarios in exporttool.
         - Added extra fields to listgrids in exporttool.
     lizard-worker to 0.8
-       - Removed 'heartbeat' connection parameter due update in pika. 
-       - Pinned to pika >= 0.9.7. 
+       - Removed 'heartbeat' connection parameter due update in pika.
+       - Pinned to pika >= 0.9.8
+    lizard-base to 1.33
+       - Added some tracking Javascript to index.html
+
+Increased the gunicorn timeout to 300 seconds. Increased the nginx timeout
+for the URL /flooding/excel/ to 300 seconds.
 
 1.36 (2012-11-13)
 -----------------
