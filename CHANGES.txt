@@ -5,7 +5,9 @@ Changelog of flooding
 1.39 (unreleased)
 -----------------
 
-- Nothing changed yet.
+flooding-lib to 2.35:
+    remove special treatment of "missing" scenario
+    metadata values like -999 and 999
 
 
 1.38 (2012-11-21)
