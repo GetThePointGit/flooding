@@ -5,7 +5,8 @@ Changelog of flooding
 1.38 (unreleased)
 -----------------
 
-- Nothing changed yet.
+flooding-lib to 2.34:
+    set all types of exporttool ExportRun to default True
 
 
 1.37 (2012-11-20)
