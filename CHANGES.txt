@@ -5,7 +5,9 @@ Changelog of flooding
 1.41 (unreleased)
 -----------------
 
-- Nothing changed yet.
+flooding-lib to 2.37:
+    - Fix problem by the starting a new sceanrio on import.
+    - Add checkboxfields to select maps for exporttool.
 
 
 1.40 (2012-11-22)
