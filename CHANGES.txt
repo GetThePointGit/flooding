@@ -5,7 +5,9 @@ Changelog of flooding
 1.42 (unreleased)
 -----------------
 
-- Nothing changed yet.
+lizard-worker to 0.9:
+    - Remove amqp-logging-handler from action object after executing of workflow, task.
+    - Pinned to pika >= 0.9.8
 
 
 1.41 (2012-11-23)
