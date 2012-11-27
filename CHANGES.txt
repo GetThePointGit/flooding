@@ -5,7 +5,7 @@ Changelog of flooding
 1.43 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updated for task 221.
 
 
 1.42 (2012-11-26)
