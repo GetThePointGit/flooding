@@ -5,7 +5,9 @@ Changelog of flooding
 1.43.2 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Updated flooding-lib to 2.41:
+    - Updated translation's strings
+    - Added options to export maps 
 
 
 1.43.1 (2012-11-27)
