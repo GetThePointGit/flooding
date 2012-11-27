@@ -5,7 +5,7 @@ Changelog of flooding
 1.44 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Added task_221 to supervisor settings.
 
 
 1.43 (2012-11-27)
