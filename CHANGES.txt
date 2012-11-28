@@ -5,7 +5,8 @@ Changelog of flooding
 1.43.3 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update flooding-lib to 2.42:
+    - Set translation to _lazy.
 
 
 1.43.2 (2012-11-27)
