@@ -5,7 +5,13 @@ Changelog of flooding
 1.43.4 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update flooding-lib to 2.43:
+
+  Approval of an import scenario tried to save the state of approval
+  checkboxes for each individual inputfield, but those don't exist
+  anymore. This led to an error. Changed the function so that in this
+  scenario a value of "True" for the approval is saved.
+
 
 
 1.43.3 (2012-11-28)
@@ -20,7 +26,7 @@ Changelog of flooding
 
 - Updated flooding-lib to 2.41:
     - Updated translation's strings
-    - Added options to export maps 
+    - Added options to export maps
 
 
 1.43.1 (2012-11-27)
