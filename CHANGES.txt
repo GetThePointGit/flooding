@@ -5,7 +5,13 @@ Changelog of flooding
 1.45 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Set unique to worker_nr in production_task_200.cfg and staging_task_200.cfg.
+- Chenge loggin leven to INFO for task_workers in production_task_200.cfg
+  andstaging_task_200.cfg 
+
+- Update flooding-lib to 2.43:
+
+    Fixed error by mapping filepath in exporttool.
 
 
 1.44 (2012-11-29)
