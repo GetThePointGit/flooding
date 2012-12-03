@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.45 (unreleased)
+1.45 (2012-12-03)
 -----------------
 
 - Set unique to worker_nr in production_task_200.cfg and staging_task_200.cfg.
