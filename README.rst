@@ -22,6 +22,11 @@ Init
 Update
     $ bin/fab staging_taskserver update_task
 
+Init
+    $ bin/fab production_taskserver init
+Update
+    $ bin/fab production_taskserver update_task
+
 See staging-task-200.cfg as an example, it actually serves tasks 200,
 210 and 220.
 

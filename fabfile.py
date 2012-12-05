@@ -10,6 +10,21 @@ init_file('fabfile.cfg')
 """The code below was originally copied from schademodule"""
 
 @task
+def production_taskserver():
+    """Sets the deployment type to staging: taskserver. Run this task before any other tasks."""
+    init_deployment_type('production')
+
+    # Manually set buildout file, by default it takes <deployment_type>.cfg.
+    #print dir(config)
+    #config.init_config({'buildout-file': 'staging-taskserver.cfg'})
+    # doesn't work, manually run: ln -s staging-taskserver.cfg buildout.cfg
+
+    # Take the task_host
+    env.hosts = [config('task_host')]
+    if config('user'):
+        env.user = config('user')
+
+@task
 def staging_taskserver():
     """Sets the deployment type to staging: taskserver. Run this task before any other tasks."""
     init_deployment_type('staging')
