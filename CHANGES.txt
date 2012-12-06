@@ -7,6 +7,14 @@ Changelog of flooding
 
 - Added task machine for production server.
 
+- Fixed error in 'scenarios_processing' overview by scenario's without
+  a workflow_template."
+
+- Update
+  lizard-worker to 0.10:
+    - Added 'description' field to WorkflowTemplate model
+    - Set to unique 'code' field in WorkflowTemplate model
+    - Added workflow template code for 3di en export
 
 1.46 (2012-12-03)
 -----------------
