@@ -41,12 +41,17 @@ class ScenarioWorkflowView(View):
         for scenario in scenarios:
             workflows = workermodels.Workflow.objects.filter(
                 scenario=scenario.id)
+            
+            workflow_template_code = ""
+            workflow_template_id = -1
+            if scenario.workflow_template is not None:
+                workflow_template_code = scenario.workflow_template.code
 
             scenario_workflow = {
                 'scenario_id': scenario.id,
                 'scenario_name': scenario.name,
-                'template_id': scenario.workflow_template.id,
-                'template_code': scenario.workflow_template.code}
+                'template_id': workflow_template_id,
+                'template_code': workflow_template_code}
 
             if workflows.exists():
                 workflow = workflows.latest('tcreated')

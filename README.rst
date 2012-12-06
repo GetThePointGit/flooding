@@ -71,30 +71,17 @@ and add them to the ``develop =`` list in buildout.cfg.
 Tests can always be run with ``bin/test`` or ``bin\test.exe``.
 
 
-Model Migration:
 
-Add field workflow_template
+Workflows
+------------------------
+The next workflow_templates are created on migration:
 
-      flooding21=> Alter table flooding_scenario
-                   Add COLUMN workflow_template integer;
+DEFAULT_TEMPLATE_CODE = 1 (workflow for a scenario with sobek model)
+IMPORTED_TEMPLATE_CODE = 2 (workflow for a scenario with onknown model via import)
+THREEDI_TEMPLATE_CODE = 3 (workflow for scenario with 3di model)
+MAP_EXPORT_TEMPLATE_CODE = 4 (workflow for map's export)
 
-Create Foreign key
-
-      flooding21=> ALTER TABLE flooding_scenario
-                   ADD CONSTRAINT workflowfk
-                   FOREIGN KEY (workflow_template)
-                   REFERENCES lizard_flooding_worker_workflowtemplate
-                   (id);
-
-Load data
-
-     $> bin/django loaddata lizard_flooding_worker
-
-Update field with same available workflow_template_id
-
-       flooding21=> UPDATE flooding_scenario
-                    SET workflow_template=[workflow_template_id];
-
+The range of template's code 0 - 50 area reserved for auto workflows. 
 
 
 Symlink a buildout configuration
