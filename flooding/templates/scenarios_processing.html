@@ -18,12 +18,9 @@ function submitForm(form_id) {
            contentType: "json",
            data:form.serialize(),
            success: function(data){
-              if (data.success) {
-                 $("#action_message").text(data.message);
-              }
+               $("#action_message").text(data.message);
            }
     });
-
     return false;
 }
 </script>

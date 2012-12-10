@@ -8,7 +8,7 @@ Changelog of flooding
 - Added task machine for production server.
 
 - Fixed error in 'scenarios_processing' overview by scenario's without
-  a workflow_template."
+  a workflow_template.
 
 - Update
   lizard-worker to 0.10:

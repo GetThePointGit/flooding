@@ -43,9 +43,10 @@ class ScenarioWorkflowView(View):
                 scenario=scenario.id)
             
             workflow_template_code = ""
-            workflow_template_id = -1
+            workflow_template_id = ""
             if scenario.workflow_template is not None:
                 workflow_template_code = scenario.workflow_template.code
+                workflow_template_id = scenario.workflow_template.id
 
             scenario_workflow = {
                 'scenario_id': scenario.id,
@@ -70,8 +71,10 @@ class ScenarioWorkflowView(View):
         if request.user.is_superuser is False:
             return render_to_response('403.html')
         scenario_id = request.POST.get('scenario_id')
-        template_id = request.POST.get('template_id')
-        success = executor.start_workflow(scenario_id, template_id)
+        template_id = request.POST.get('template_id', u'')
+        success = False
+        if template_id != u'':
+            success = executor.start_workflow(scenario_id, template_id)
         message = "Scenario {0} is {1} in de wachtrij geplaatst."
         if success is False:
             message = message.format(scenario_id, "NIET")
