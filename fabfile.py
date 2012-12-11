@@ -21,8 +21,11 @@ def production_taskserver():
 
     # Take the task_host
     env.hosts = [config('task_host')]
-    if config('user'):
-        env.user = config('user')
+    print 'user %s' % env.user
+    env.user = 'jack.ha'
+    # if config('user'):
+    #     print 'user %s' % config('user')
+    #     env.user = 'jack.ha'  #config('user')
 
 @task
 def staging_taskserver():
