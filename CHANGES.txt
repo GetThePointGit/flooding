@@ -2,10 +2,23 @@ Changelog of flooding
 ===================================================
 
 
-1.48.3 (unreleased)
--------------------
+1.50 (unreleased)
+-----------------
 
 - Updated fabfile for taskserver.
+
+
+1.49 (2012-12-17)
+-----------------
+
+- Add new versions of the Groupimport example sheets.
+
+- Flooding-lib to 2.48.1:
+  Added creating ScenarioBreach when creating 3Di scenario. This
+  ScenarioBreach is dummy, but it is needed by various flooding components.
+
+  Using objects.get() instead of get() in Scenario.set_value_for_inputfield;
+  prevents an error in some cases with uploading Excel sheets.
 
 
 1.48.2 (2012-12-17)
@@ -67,7 +80,7 @@ Changelog of flooding
 
 - Set unique to worker_nr in production_task_200.cfg and staging_task_200.cfg.
 - Chenge loggin leven to INFO for task_workers in production_task_200.cfg
-  andstaging_task_200.cfg 
+  andstaging_task_200.cfg
 
 - Update flooding-lib to 2.43:
 
