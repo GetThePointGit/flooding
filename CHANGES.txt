@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.48.3 (unreleased)
--------------------
+1.49 (2012-12-17)
+-----------------
 
 - Add new versions of the Groupimport example sheets.
 
