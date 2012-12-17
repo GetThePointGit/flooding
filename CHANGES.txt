@@ -5,7 +5,7 @@ Changelog of flooding
 1.48.3 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add new versions of the Groupimport example sheets.
 
 
 1.48.2 (2012-12-17)
@@ -67,7 +67,7 @@ Changelog of flooding
 
 - Set unique to worker_nr in production_task_200.cfg and staging_task_200.cfg.
 - Chenge loggin leven to INFO for task_workers in production_task_200.cfg
-  andstaging_task_200.cfg 
+  andstaging_task_200.cfg
 
 - Update flooding-lib to 2.43:
 
