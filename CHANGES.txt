@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.48.2 (unreleased)
+1.48.2 (2012-12-17)
 -------------------
 
 - Pinned threedi 0.6 for auto detect png resolution.
