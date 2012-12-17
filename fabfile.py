@@ -54,3 +54,7 @@ def update_task():
         # sudo("bin/supervisorctl stop gunicorn", user='buildout') # if it runs
         # sudo("bin/supervisorctl restart celeryd", user='buildout')  # Only for task server
         sudo("bin/supervisorctl restart task_200", user='buildout')  # Only for task server
+        sudo("bin/supervisorctl restart task_210", user='buildout')  # Only for task server
+        sudo("bin/supervisorctl restart task_220", user='buildout')  # Only for task server
+        sudo("bin/supervisorctl restart task_221", user='buildout')  # Only for task server
+        sudo("bin/supervisorctl restart task_222", user='buildout')  # Only for task server
