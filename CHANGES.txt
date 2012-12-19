@@ -5,7 +5,7 @@ Changelog of flooding
 1.49.2 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Updated export run: you can now select different sized grids as input.
 
 
 1.49.1 (2012-12-17)
