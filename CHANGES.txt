@@ -5,7 +5,10 @@ Changelog of flooding
 1.49.5 (unreleased)
 -------------------
 
-- Update frame's width by Table, Importeren, Exporteren.
+- Fix frame's width by Table, Importeren, Exporteren.
+
+- Updated flooding-lib to 2.52
+    - Fix 'Export run details' overview. 
 
 
 1.49.4 (2012-12-20)
