@@ -7,8 +7,9 @@ Changelog of flooding
 
 - Fix frame's width by Table, Importeren, Exporteren.
 
-- Updated flooding-lib to 2.52
-    - Fix 'Export run details' overview. 
+- Updated flooding-lib to 2.52, 2.53
+    - Fix 'Export run details' overview.
+    - Add the loading message for exporttool. 
 
 
 1.49.4 (2012-12-20)
