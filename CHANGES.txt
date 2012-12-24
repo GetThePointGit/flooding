@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.49.5 (unreleased)
+1.49.5 (2012-12-24)
 -------------------
 
 - Fix frame's width by Table, Importeren, Exporteren.
