@@ -5,7 +5,9 @@ Changelog of flooding
 1.49.6 (unreleased)
 -------------------
 
-- Nothing changed yet.
+Updated flooding-lib to 2.54:
+- Fix a bug where the importtool tries to convert everything into
+  ASCII without reason.
 
 
 1.49.5 (2012-12-24)
@@ -15,7 +17,7 @@ Changelog of flooding
 
 - Updated flooding-lib to 2.52, 2.53
     - Fix 'Export run details' overview.
-    - Add the loading message for exporttool. 
+    - Add the loading message for exporttool.
 
 
 1.49.4 (2012-12-20)
