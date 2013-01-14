@@ -2,8 +2,8 @@ Changelog of flooding
 ===================================================
 
 
-1.49.6 (unreleased)
--------------------
+1.50 (2013-01-14)
+-----------------
 
 Updated flooding-lib to 2.54:
 - Fix a bug where the importtool tries to convert everything into
