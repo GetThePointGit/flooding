@@ -5,7 +5,13 @@ Changelog of flooding
 1.51 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Updates flooding-lib to 2.55:
+    - Rewrite png_generation script to use numpy and gdal instead of the
+      nens.asc libraries.
+    - Reorganize tests.
+    - Change 'temporarily_unzipped' so that it can use alternative temp
+      directories, and optionally not rezip any changed files.
+    - Fix issues for running the png_generation under Windows.
 
 
 1.50 (2013-01-14)
