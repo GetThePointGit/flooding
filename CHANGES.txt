@@ -5,7 +5,10 @@ Changelog of flooding
 1.52 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Update flooding-lib to 2.56
+    - Remove comment line in .asc files for task spawn (130).
+    - Refactor script spawn.py.
+    - Add tests for spawn.py.
 
 
 1.51 (2013-01-23)
