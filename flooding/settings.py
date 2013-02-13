@@ -152,6 +152,7 @@ CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 
 INSTALLED_APPS = (
     'flooding',
+    'rest_framework',
     'flooding_base',
     'flooding_presentation',
     'flooding_visualization',  # Must be below flooding_presentation
@@ -180,6 +181,11 @@ INSTALLED_APPS = (
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
+}
 
 LOGGING = setup_logging(
     BUILDOUT_DIR, console_level=None, file_level='WARN')

@@ -10,6 +10,7 @@ import flooding_visualization.urls
 import lizard_worker.urls
 
 from flooding.views import ScenarioWorkflowView
+                            
 
 admin.autodiscover()
 
@@ -26,7 +27,7 @@ urlpatterns = patterns(
         name="scenarios_processing"),
 
     url(r'^scenarios_processing/step/(?P<step>\d+)$', ScenarioWorkflowView.as_view(),
-        name="scenarios_processing"),
+        name="scenarios_processing"), 
 
     url(r'^execute$', ScenarioWorkflowView.as_view(),
         name="execute_scenario"),

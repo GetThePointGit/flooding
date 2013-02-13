@@ -15,6 +15,7 @@ install_requires = [
     'django-extensions',
     'django-staticfiles',
     'django-nose',
+    'djangorestframework',
     'gunicorn',
     'flooding-base >= 1.25',
     'flooding-lib >= 1.30',
