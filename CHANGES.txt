@@ -8,6 +8,10 @@ Changelog of flooding
 Update flooding-lib to 2.57:
     - Colormap leftbounds should be exclusive.
     - Always use a project's colormap, if available.
+Update to 2.59:
+- Added 'liztype' field to 'ExternalWater' model
+- Hopefully fix a UTF8 error where the code didn't expect non-ASCII in
+  users' full names.
 
 
 1.52 (2013-01-25)
