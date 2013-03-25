@@ -5,7 +5,7 @@ Changelog of flooding
 1.57 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Update nginx.config.in, add timeout.
 
 
 1.56 (2013-03-25)
