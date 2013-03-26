@@ -5,7 +5,10 @@ Changelog of flooding
 1.58 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.62
+      - Fix error by missed zipfile for export ROR maps.
+      - Fix error by corrupted zipfile for export ROR maps.
 
 
 1.57 (2013-03-25)
