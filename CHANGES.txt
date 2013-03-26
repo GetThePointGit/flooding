@@ -9,6 +9,7 @@ Changelog of flooding
     flooding-lib to 2.62
       - Fix error by missed zipfile for export ROR maps.
       - Fix error by corrupted zipfile for export ROR maps.
+      - Reduce memory usage in exporttool.
 
 
 1.57 (2013-03-25)
