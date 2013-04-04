@@ -5,7 +5,11 @@ Changelog of flooding
 1.60 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+  flooding-lib to 2.65:
+     - Fix bugs with calculating the extent in util.geo.GeoImage
+       (flooding #5).
+
 
 
 1.59 (2013-03-28)
