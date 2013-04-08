@@ -5,7 +5,9 @@ Changelog of flooding
 1.62 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.67:
+        - Fix problem by ror-export on creating a gdal's driver.
 
 
 1.61 (2013-04-08)
