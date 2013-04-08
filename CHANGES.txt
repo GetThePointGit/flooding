@@ -5,7 +5,7 @@ Changelog of flooding
 1.65 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Repaire fabfile.cfg.
 
 
 1.64 (2013-04-08)
