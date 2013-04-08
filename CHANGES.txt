@@ -5,7 +5,9 @@ Changelog of flooding
 1.61 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.66:
+        - Fix bug with empty gridmaxwaterdepth.zip, task spaw #1
 
 
 1.60 (2013-04-04)
