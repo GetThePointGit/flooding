@@ -5,7 +5,9 @@ Changelog of flooding
 1.68 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.71:
+        - Fix bug in png_generation task by selecting colormapping.
 
 
 1.67 (2013-04-09)
