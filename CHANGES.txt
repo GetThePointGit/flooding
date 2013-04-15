@@ -5,7 +5,10 @@ Changelog of flooding
 1.69 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.72:
+        - Set max_uncompressed_zip_size to None for removing comment line
+  	  from zips > 1GB.
 
 
 1.68 (2013-04-09)
