@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.72 (unreleased)
+1.72 (2013-05-07)
 -----------------
 
 - New versions of example groupimport Excel sheets.
