@@ -5,7 +5,11 @@ Changelog of flooding
 1.73 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.74, 2.75
+        - Remove creating .csv and .txt files on creating a new ror-export.
+        - Use gtiff driver in place of mem to reduce memeory usage for
+          ror-export calc
 
 
 1.72 (2013-05-07)
