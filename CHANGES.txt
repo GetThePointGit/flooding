@@ -5,8 +5,10 @@ Changelog of flooding
 1.74 (unreleased)
 -----------------
 
-- Nothing changed yet.
-
+- Updates
+    flooding-lib to 2.77
+        - Revrite calculate_export_maps script to reduce memory usage.
+        - Add functionality to edit exports (partly implemented).
 
 1.73 (2013-05-07)
 -----------------
