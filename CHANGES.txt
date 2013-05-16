@@ -5,7 +5,9 @@ Changelog of flooding
 1.76 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.79
+        - Close gdal dataset properly for exporttool.
 
 
 1.75 (2013-05-16)
