@@ -5,7 +5,9 @@ Changelog of flooding
 1.78 (unreleased)
 -----------------
 
-- Nothing changed yet.
+Updates
+    flooding-base to 1.36
+        - Extended intervalFormatter to use an interval > 30 days.
 
 
 1.77 (2013-05-21)
