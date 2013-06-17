@@ -5,7 +5,12 @@ Changelog of flooding
 1.79 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.80, 2.81
+        - Add functionality to manage initial_level for openbreach task
+        - Override filse in model.zip for openbreach task
+        - Check with pep8
+        - Fix tests
 
 
 1.78 (2013-06-12)
