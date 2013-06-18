@@ -11,6 +11,8 @@ Changelog of flooding
         - Override filse in model.zip for openbreach task
         - Check with pep8
         - Fix tests
+    flooding-base to 1.37
+        - Fix bug in NGeneral.js
 
 
 1.78 (2013-06-12)
