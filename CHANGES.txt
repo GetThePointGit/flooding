@@ -5,7 +5,9 @@ Changelog of flooding
 1.80 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.82
+        - Set permission check on editing of export_run.
 
 
 1.79 (2013-06-18)
