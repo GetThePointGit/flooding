@@ -5,7 +5,9 @@ Changelog of flooding
 1.83 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Flooding-lib to 2.85: added some caches to speed up the ROR
+  dashboard page.  Also added a cronjob that runs every hour, using
+  supervisor to make sure it doesn't start overlapping with itself.
 
 
 1.82 (2013-07-03)
@@ -71,7 +73,7 @@ Updates
 
 - Updates
     flooding-lib to 2.78
-        - Completed implementation of 'edit' functionality for export tool. 
+        - Completed implementation of 'edit' functionality for export tool.
 
 
 1.74 (2013-05-15)
