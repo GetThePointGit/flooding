@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.83 (unreleased)
+1.83 (2013-07-08)
 -----------------
 
 - Flooding-lib to 2.85: added some caches to speed up the ROR
