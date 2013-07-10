@@ -5,7 +5,7 @@ Changelog of flooding
 1.85 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix typo in supervisor command name
 
 
 1.84 (2013-07-10)
