@@ -5,8 +5,17 @@ Changelog of flooding
 1.83 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates
+    flooding-lib to 2.87
+        - Cache the province a Scenario belongs to. Cache a province's
+          scenario statistics.
+	- Correctly create ROR approval Excel sheets for each province.
+        - Don't generate them from the view if they already exist.
+        - (In flooding) call the script each hour.
+	- Fix error 'To many open files' by exporttool.
 
+    flooding-base to 1.38
+        - Fix OpenStreetMap layer.
 
 1.82 (2013-07-03)
 -----------------
