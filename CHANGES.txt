@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.83 (unreleased)
+1.85 (unreleased)
 -----------------
 
 - Updates
@@ -16,6 +16,36 @@ Changelog of flooding
 
     flooding-base to 1.38
         - Fix OpenStreetMap layer.
+
+1.84.2 (2013-07-10)
+-------------------
+
+- Nothing changed yet.
+
+
+1.84.1 (2013-07-10)
+-------------------
+
+- Fix typo in supervisor command name
+
+
+1.84 (2013-07-10)
+-----------------
+
+- Flooding-lib to 2.86 for:
+    - Correctly create ROR approval Excel sheets for each province.
+    - Don't generate them from the view if they already exist.
+- Call the ROR Excel script every hour
+
+
+
+1.83 (2013-07-08)
+-----------------
+
+- Flooding-lib to 2.85: added some caches to speed up the ROR
+  dashboard page.  Also added a cronjob that runs every hour, using
+  supervisor to make sure it doesn't start overlapping with itself.
+
 
 1.82 (2013-07-03)
 -----------------
@@ -80,7 +110,7 @@ Updates
 
 - Updates
     flooding-lib to 2.78
-        - Completed implementation of 'edit' functionality for export tool. 
+        - Completed implementation of 'edit' functionality for export tool.
 
 
 1.74 (2013-05-15)
