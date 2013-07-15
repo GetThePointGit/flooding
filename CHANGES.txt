@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.86 (unreleased)
+1.86 (2013-07-15)
 -----------------
 
 - Unpinned flooding-lib. We got tired of keeping it up to date and
