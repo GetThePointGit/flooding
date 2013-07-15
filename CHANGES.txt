@@ -5,7 +5,8 @@ Changelog of flooding
 1.86 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Unpinned flooding-lib. We got tired of keeping it up to date and
+  updating these CHANGES. See the latest version of flooding-lib.
 
 
 1.85 (2013-07-12)
