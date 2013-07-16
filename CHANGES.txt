@@ -5,7 +5,7 @@ Changelog of flooding
 1.88 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Fix supervisor task call.
 
 
 1.87 (2013-07-16)
