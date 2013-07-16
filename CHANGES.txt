@@ -5,7 +5,8 @@ Changelog of flooding
 1.87 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Scedule tasks calculate_province_statistics_cronjob to run at 6:01 and 
+  create_province_excel_script at 6:30 daily.
 
 
 1.86 (2013-07-15)
