@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.88 (unreleased)
+1.88 (2013-07-16)
 -----------------
 
 - Fix supervisor task call.
