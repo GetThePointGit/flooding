@@ -5,7 +5,12 @@ Changelog of flooding
 1.90 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Updates:
+    flooding-base to 1.40
+      - Update smartclient to v9.0.
+      - Add speed control button for animations
+    flooding-lib to 2.92
+      - Update templates to use smartclient v9.0.
 
 
 1.89 (2013-08-14)
