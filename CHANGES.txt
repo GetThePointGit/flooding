@@ -7,6 +7,7 @@ Changelog of flooding
 
 - Add settings for ror-wateren and ror-keringen
 - Disable GZipMiddleware.
+- Add path to mkdir recipe
 
 
 1.90 (2013-09-09)

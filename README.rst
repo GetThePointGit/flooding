@@ -89,6 +89,14 @@ MAP_EXPORT_TEMPLATE_CODE = 4 (workflow for map's export)
 The range of template's code 0 - 50 area reserved for auto workflows. 
 
 
+Upload/download wateren- and kerigne-sahpes
+-------------------------------------------
+Create a symbolic link ``BUILDOUT_DIR/var/ror_export`` to the mounted directory
+(see ``ROR_KERINGEN_PATH`` in ``settings.py``)::
+
+    $ ln -s /mnt/flooding/Flooding/ror_keringen var
+
+
 Symlink a buildout configuration
 --------------------------------
 
