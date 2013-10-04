@@ -5,7 +5,8 @@ Changelog of flooding
 1.91 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add settings for ror-wateren and ror-keringen
+- Disable GZipMiddleware.
 
 
 1.90 (2013-09-09)

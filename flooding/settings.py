@@ -131,7 +131,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 MIDDLEWARE_CLASSES = (
     # Gzip needs to be at the top.
-    'django.middleware.gzip.GZipMiddleware',
+    #'django.middleware.gzip.GZipMiddleware',
     # Below is the default list, don't modify it.
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -290,6 +290,11 @@ HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180
 #     "BROKER_VHOST": "flooding-test",
 #     "HEARTBEAT": False
 # }
+
+# import ror-keringen
+ROR_KERINGEN_PATH = os.path.join(BUILDOUT_DIR, 'var', 'ror_keringen')
+ROR_KERINGEN_APPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'applied')
+ROR_KERINGEN_NOTAPPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'not_applied')
 
 try:
     from flooding.localproductionsettings import *
