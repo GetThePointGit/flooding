@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.92 (unreleased)
+1.92 (2013-10-11)
 -----------------
 
 - Netcdf4 needs to be pinned at 1.0.4, incompatibility.
