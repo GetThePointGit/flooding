@@ -5,7 +5,7 @@ Changelog of flooding
 1.92 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Netcdf4 needs to be pinned at 1.0.4, incompatibility.
 
 
 1.91 (2013-10-09)
@@ -44,7 +44,7 @@ Changelog of flooding
 1.87 (2013-07-16)
 -----------------
 
-- Scedule tasks calculate_province_statistics_cronjob to run at 6:01 and 
+- Scedule tasks calculate_province_statistics_cronjob to run at 6:01 and
   create_province_excel_script at 6:30 daily.
 
 
