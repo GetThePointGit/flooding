@@ -23,6 +23,8 @@ install_requires = [
     'nens >= 1.11',
     'supervisor',
     'south',
+    'gislib',
+    'raster-server',
     ],
 
 tests_require = [
@@ -46,8 +48,10 @@ setup(name='flooding',
       zip_safe=False,
       install_requires=install_requires,
       tests_require=tests_require,
-      extras_require = {'test': tests_require},
+      extras_require={'test': tests_require},
       entry_points={
           'console_scripts': [
+            'runflask=raster_server.server:run',
+            'gunicorn=flooding.gunicorn_wsgi_wrapper:run',
           ]},
       )

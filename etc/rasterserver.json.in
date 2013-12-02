@@ -1,0 +1,5 @@
+{
+"buildout_dir": "${buildout:directory}",
+"data_dir": "${buildout:directory}/var/pyramids",
+"blueprints": ["raster_server.wms"]
+}
