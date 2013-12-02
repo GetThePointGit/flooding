@@ -157,6 +157,7 @@ INSTALLED_APPS = (
     'flooding_visualization',  # Must be below flooding_presentation
     'flooding_lib.tools.approvaltool',
     'lizard_worker',
+    'lizard_raster',
     'flooding_lib',  # Must be below flooding_visualization,
                      # flooding_presentation, lizard_worker and
                      # approvaltool

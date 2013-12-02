@@ -19,6 +19,7 @@ install_requires = [
     'flooding-base >= 1.40',
     'flooding-lib >= 2.92',
     'lizard-worker',
+    'lizard-raster',
     'nens >= 1.11',
     'supervisor',
     'south',
