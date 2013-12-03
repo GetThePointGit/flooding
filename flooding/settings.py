@@ -207,6 +207,8 @@ EXTERNAL_RESULT_MOUNTED_DIR = '/mnt/flooding/Flooding/resultaten'
 TMP_DIR = '/mnt/flooding/Flooding/tmp_dir_used_by_site'
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
+RASTER_SERVER_URL = "http://flooding.lizard.net/wms"
+
 #location of directories for task execution. Pelase configure to local
 #installation root of HIS schade en slachtoffers module
 HISSSM_ROOT = ''
