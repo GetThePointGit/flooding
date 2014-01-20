@@ -86,7 +86,7 @@ IMPORTED_TEMPLATE_CODE = 2 (workflow for a scenario with onknown model via impor
 THREEDI_TEMPLATE_CODE = 3 (workflow for scenario with 3di model)
 MAP_EXPORT_TEMPLATE_CODE = 4 (workflow for map's export)
 
-The range of template's code 0 - 50 area reserved for auto workflows. 
+The range of template's code 0 - 50 area reserved for auto workflows.
 
 
 Upload/download wateren- and kerigne-sahpes
@@ -107,3 +107,36 @@ on the server)::
 
     $> ln -s development.cfg buildout.cfg
 
+
+Raster Server
+-------------
+
+We also use an instance of the "raster-server" to serve WMS layers for
+grid data. The grid data is stored as gislib "pyramids".
+
+To use gislib and raster-server in Flooding, both need to be checked out
+as development packages, using the "flooding-branch" branch.
+
+Running Buildout, a configuration file for the raster-server is
+created as etc/rasterserver.json. It says that the rasters are served
+from BUILDOUT_DIR/var/pyramids. It is possible to symlink
+/mnt/flooding/Flooding/pyramids to that directory, or to copy a few
+rasters from the mounted share to that directory, or to change the
+etc/rasterserver.json.in input file to use something file (in that
+case, don't commit it).
+
+The command to run the raster-server in development is, in the
+buildout directory:
+
+
+    $> RASTER_SERVER_SETTINGS=etc/rasterserver.json bin/runflask
+
+The server will run at 0.0.0.0:5000 and visiting it should show a
+working demo page where the available layers can be shown (although
+there might be way too many for the page to render if you are using
+the full Flooding share).
+
+The URL used to find the WMS server is set in the Django settings as
+RASTER_SERVER_URL. developmentsettings.py sets it to
+'http://127.0.0.1:5000/wms' by default, change it to whatever you need
+in localsettings.py if you are using virtual machines or similar.
