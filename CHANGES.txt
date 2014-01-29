@@ -5,7 +5,7 @@ Changelog of flooding
 1.93 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Put right branches of gislib and rasterserver into buildout config.
 
 
 1.92 (2013-10-11)
