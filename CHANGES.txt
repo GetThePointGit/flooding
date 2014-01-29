@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.93 (unreleased)
+1.93 (2014-01-29)
 -----------------
 
 - Put right branches of gislib and rasterserver into buildout config.
