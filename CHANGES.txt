@@ -7,6 +7,7 @@ Changelog of flooding
 
 - Add task 150, 180 to production-task-200.cfg
 
+- Set paths to new share in settings.py.
 
 1.93 (2014-01-29)
 -----------------
