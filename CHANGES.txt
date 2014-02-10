@@ -5,7 +5,7 @@ Changelog of flooding
 1.94 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add task 150, 180 to production-task-200.cfg
 
 
 1.93 (2014-01-29)
