@@ -2,10 +2,23 @@ Changelog of flooding
 ===================================================
 
 
-1.93 (unreleased)
+1.95 (unreleased)
+-----------------
+
+- Nothing changed yet.
+
+
+1.94 (2014-02-10)
 -----------------
 
 - Add task 150, 180 to production-task-200.cfg
+
+- Set paths to new share in settings.py.
+
+1.93 (2014-01-29)
+-----------------
+
+- Put right branches of gislib and rasterserver into buildout config.
 
 
 1.92 (2013-10-11)
