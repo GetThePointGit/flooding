@@ -78,12 +78,17 @@ TIME_ZONE = 'Europe/Amsterdam'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'nl-NL'
+LANGUAGE_CODE = 'nl'
 # For at-runtime language switching.  Note: they're shown in reverse order in
 # the interface!
+ugettext = lambda s: s
+
 LANGUAGES = (
-    ('nl', 'Nederlands'),
+    ('en', ugettext('English')),
+    ('nl', ugettext('Nederlands')),
 )
+
+LOCALE_PATHS = (os.path.join(BUILDOUT_DIR, 'src', 'flooding-lib', 'flooding_lib', 'locale'),)
 # If you set this to False, Django will make some optimizations so as not to
 # load the internationalization machinery.
 USE_I18N = True
@@ -133,6 +138,7 @@ MIDDLEWARE_CLASSES = (
     # Gzip needs to be at the top.
     #'django.middleware.gzip.GZipMiddleware',
     # Below is the default list, don't modify it.
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',

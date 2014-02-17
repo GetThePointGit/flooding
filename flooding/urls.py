@@ -30,6 +30,8 @@ urlpatterns = patterns(
 
     url(r'^execute$', ScenarioWorkflowView.as_view(),
         name="execute_scenario"),
+
+    (r'^i18n/', include('django.conf.urls.i18n')),
     )
 
 
