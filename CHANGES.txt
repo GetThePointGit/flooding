@@ -5,7 +5,7 @@ Changelog of flooding
 1.95 (unreleased)
 -----------------
 
-- Nothing changed yet.
+- Add language settings.
 
 
 1.94 (2014-02-10)
