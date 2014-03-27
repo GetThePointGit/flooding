@@ -6,7 +6,7 @@ Changelog of flooding
 -----------------
 
 - Add language settings.
-
+- Remove 3di tasks from recipe of supervisor
 
 1.94 (2014-02-10)
 -----------------
