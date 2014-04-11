@@ -7,6 +7,8 @@ Changelog of flooding
 
 - Add language settings.
 - Remove 3di tasks from recipe of supervisor
+- Remove references to raster-server, because it's a part of
+  flooding-lib now.
 
 1.94 (2014-02-10)
 -----------------

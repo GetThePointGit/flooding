@@ -24,7 +24,6 @@ install_requires = [
     'supervisor',
     'south',
     'gislib',
-    'raster-server',
     ],
 
 tests_require = [
