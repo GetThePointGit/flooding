@@ -13,3 +13,6 @@ flooding/localstagingsettings.py
 flooding/localsettings.py
 nosetests.xml
 src
+etc/rasterserver.json
+build/
+htmlcov/
