@@ -207,10 +207,14 @@ logging.getLogger().addHandler(handler)
 
 SYMBOLS_DIR = resource_filename(
     'flooding_visualization', 'media/flooding_visualization/symbols')
-EXTERNAL_PRESENTATION_MOUNTED_DIR = (
-    '//p-isilon-d1.external-nens.local/nens/flooding/flod-share/presentationdatabase_totaal')
-EXTERNAL_RESULT_MOUNTED_DIR = '//p-isilon-d1.external-nens.local/nens/flooding/flod-share/resultaten'
-TMP_DIR = '//p-isilon-d1.external-nens.local/nens/flooding/flod-share/tmp_dir_used_by_site'
+FLOODING_SHARE = '//p-isilon-d1.external-nens.local/nens/flooding/flod-share/'
+EXTERNAL_PRESENTATION_MOUNTED_DIR = os.path.join(
+    FLOODING_SHARE, 'presentationdatabase_totaal')
+EXTERNAL_RESULT_MOUNTED_DIR = os.path.join(
+    FLOODING_SHARE, 'resultaten')
+TMP_DIR = os.path.join(
+    FLOODING_SHARE, 'tmp_dir_used_by_site')
+
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
 RASTER_SERVER_URL = "http://flooding.lizard.net/wms"
