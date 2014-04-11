@@ -2,7 +2,7 @@ Changelog of flooding
 ===================================================
 
 
-1.95 (unreleased)
+1.95 (2014-04-11)
 -----------------
 
 - Add language settings.
