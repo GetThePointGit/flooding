@@ -175,13 +175,13 @@ INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.gis',
-    'django.contrib.markup',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django_extensions',
     'django_nose',  # Must be below south
     'supervisor',
     'gunicorn',
+    'markdown_deux',  # For markdown template filter in flooding-base
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
