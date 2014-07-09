@@ -20,8 +20,8 @@ try:
 except ImportError:
     import Image
 
-from lizard_ui.settingshelper import setup_logging
-from lizard_ui.settingshelper import STATICFILES_FINDERS
+from .settingshelper import setup_logging
+from .settingshelper import STATICFILES_FINDERS
 
 from pkg_resources import resource_filename
 
