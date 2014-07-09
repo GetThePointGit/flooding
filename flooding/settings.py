@@ -156,6 +156,8 @@ CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 
 INSTALLED_APPS = (
     'flooding',
+    'flooding_lib.tools.pyramids',
+    'flooding_lib.sharedproject',
     'flooding_base',
     'flooding_presentation',
     'flooding_visualization',  # Must be below flooding_presentation
