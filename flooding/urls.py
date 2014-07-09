@@ -21,7 +21,7 @@ urlpatterns = patterns(
     (r'^presentation/', include(flooding_presentation.urls)),
     (r'^worker/', include(lizard_worker.urls)),
     (r'', include(flooding_base.urls)),
-    
+
     url(r'^scenarios_processing/$', ScenarioWorkflowView.as_view(),
         name="scenarios_processing"),
 
@@ -37,6 +37,5 @@ urlpatterns = patterns(
 
 if settings.DEBUG:
     # Add this also to the projects that use this application
-    urlpatterns += patterns('',
-        (r'', include('staticfiles.urls')),
-    )
+    urlpatterns += patterns(
+        '', (r'', include('django.contrib.staticfiles.urls')))
