@@ -1,6 +1,6 @@
 from django.conf import settings
-from django.conf.urls.defaults import include
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import include
+from django.conf.urls import patterns, url
 from django.contrib import admin
 
 import flooding_base.urls
