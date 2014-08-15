@@ -20,8 +20,8 @@ try:
 except ImportError:
     import Image
 
-from lizard_ui.settingshelper import setup_logging
-from lizard_ui.settingshelper import STATICFILES_FINDERS
+from .settingshelper import setup_logging
+from .settingshelper import STATICFILES_FINDERS
 
 from pkg_resources import resource_filename
 
@@ -126,13 +126,11 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 # STATIC_URL }}myapp/my.css in your templates.
 TEMPLATE_CONTEXT_PROCESSORS = (
     # Default items.
-    'django.core.context_processors.auth',
+    'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
     'django.core.context_processors.i18n',
     'django.core.context_processors.media',
-    # Extra for django-staticfiles.
-    'staticfiles.context_processors.static_url',
-    )
+    'django.core.context_processors.static')
 
 MIDDLEWARE_CLASSES = (
     # Gzip needs to be at the top.
@@ -158,6 +156,8 @@ CACHE_BACKEND = 'file://%s' % os.path.join(BUILDOUT_DIR, 'var', 'cache')
 
 INSTALLED_APPS = (
     'flooding',
+    'flooding_lib.tools.pyramids',
+    'flooding_lib.sharedproject',
     'flooding_base',
     'flooding_presentation',
     'flooding_visualization',  # Must be below flooding_presentation
@@ -169,21 +169,19 @@ INSTALLED_APPS = (
                      # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
-    'flooding_lib.tools.pyramids',
-    'flooding_lib.sharedproject',
-    'staticfiles',
+    'django.contrib.staticfiles',
     'south',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.gis',
-    'django.contrib.markup',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django_extensions',
     'django_nose',  # Must be below south
     'supervisor',
     'gunicorn',
+    'markdown_deux',  # For markdown template filter in flooding-base
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'

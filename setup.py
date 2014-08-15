@@ -1,5 +1,4 @@
 from setuptools import setup
-import os.path
 
 version = '1.96dev'
 
@@ -11,9 +10,8 @@ long_description = '\n\n'.join([
     ])
 
 install_requires = [
-    'Django',
+    'Django > 1.4.0, < 1.7',
     'django-extensions',
-    'django-staticfiles',
     'django-nose',
     'gunicorn',
     'flooding-base >= 1.40',

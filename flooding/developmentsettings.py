@@ -1,4 +1,4 @@
-from lizard_ui.settingshelper import setup_logging
+from .settingshelper import setup_logging
 
 from flooding.settings import *
 

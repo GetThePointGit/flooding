@@ -33,5 +33,6 @@ class IntegrationTest(TestCase):
     def test_homepage(self):
         c = Client()
         url = '/'
+
         response = c.get(url)
         self.assertEquals(response.status_code, 200)
