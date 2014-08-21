@@ -14,7 +14,6 @@ install_requires = [
     'django-extensions',
     'django-nose',
     'gunicorn',
-    'flooding-base >= 1.40',
     'flooding-lib >= 2.92',
     'lizard-worker',
     'lizard-raster',
