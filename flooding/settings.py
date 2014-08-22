@@ -21,7 +21,6 @@ except ImportError:
     import Image
 
 from .settingshelper import setup_logging
-from .settingshelper import STATICFILES_FINDERS
 
 from pkg_resources import resource_filename
 
@@ -99,6 +98,13 @@ MEDIA_ROOT = os.path.join(BUILDOUT_DIR, 'var', 'media')
 # "bin/django build_static" places all collected static files from all
 # applications' /media directory.
 STATIC_ROOT = os.path.join(BUILDOUT_DIR, 'var', 'static')
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # Enable support for django-compressor.
+    'compressor.finders.CompressorFinder',
+    )
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).

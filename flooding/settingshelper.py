@@ -1,12 +1,5 @@
 import os
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    # Enable support for django-compressor.
-    'compressor.finders.CompressorFinder',
-    )
-
 
 def setup_logging(buildout_dir,
                   console_level='DEBUG',
