@@ -19,6 +19,10 @@ DATABASES = {
         },
     }
 
+RAVEN_CONFIG = {
+    'dsn': 'https://133778d1860943c495d18dadea414c79:bfee15a67d1f45bc889e0ef47266e5e9@sentry.lizard.net/23',
+}
+
 try:
     from flooding.localstagingsettings import *
     # For local production overrides (DB passwords, for instance)

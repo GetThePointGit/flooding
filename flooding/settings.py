@@ -176,6 +176,7 @@ INSTALLED_APPS = (
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
     'django.contrib.staticfiles',
+    'raven.contrib.django.raven_compat',
     'south',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -313,6 +314,11 @@ HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180
 ROR_KERINGEN_PATH = os.path.join(BUILDOUT_DIR, 'var', 'ror_keringen')
 ROR_KERINGEN_APPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'applied')
 ROR_KERINGEN_NOTAPPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'not_applied')
+
+RAVEN_CONFIG = {
+    'dsn': 'https://277f1fe721624944888af2ec317afa92:32f25c4158a643448196362607166bd1@sentry.lizard.net/22',
+}
+
 
 try:
     from flooding.localproductionsettings import *

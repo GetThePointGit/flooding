@@ -51,7 +51,7 @@ def setup_logging(buildout_dir,
                 },
             'sentry': {
                 'level': sentry_level,
-                'class': 'raven.contrib.django.handlers.SentryHandler',
+                'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
                 },
             },
         'loggers': {
@@ -65,6 +65,11 @@ def setup_logging(buildout_dir,
                 'propagate': False,
                 'level': 'DEBUG',
                 },
+            'django.request': {
+                'handlers': ['console', 'logfile',],
+                'propagate': False,
+                'level': 'ERROR',  # WARN also shows 404 errors
+                },
             },
         }
     if console_level is not None:
@@ -73,6 +78,7 @@ def setup_logging(buildout_dir,
         result['loggers']['']['handlers'].append('logfile')
     if sentry_level is not None:
         result['loggers']['']['handlers'].append('sentry')
+        result['loggers']['django.request']['handlers'].append('sentry')
     else:
         # When sentry is still in the handlers sentry needs to be installed
         # which gave import errors in Django 1.4.
