@@ -301,14 +301,14 @@ QUEUES = {
 HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200", "210", "220"]
 
 # TODO: configure your broker settings
-# BROKER_SETTINGS = {
-#     "BROKER_HOST": "localhost",
-#     "BROKER_PORT": 5672,
-#     "BROKER_USER": "",
-#     "BROKER_PASSWORD": "",
-#     "BROKER_VHOST": "flooding-test",
-#     "HEARTBEAT": False
-# }
+BROKER_SETTINGS = {
+    "BROKER_HOST": "localhost",
+    "BROKER_PORT": 5672,
+    "BROKER_USER": "",
+    "BROKER_PASSWORD": "",
+    "BROKER_VHOST": "TODO",
+    "HEARTBEAT": False
+}
 
 # import ror-keringen
 ROR_KERINGEN_PATH = os.path.join(BUILDOUT_DIR, 'var', 'ror_keringen')
