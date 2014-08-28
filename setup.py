@@ -22,7 +22,8 @@ install_requires = [
     'raven',
     'south',
     'supervisor',
-    'flask'
+    'flask',
+    'django-markdown-deux'
     ],
 
 tests_require = [
