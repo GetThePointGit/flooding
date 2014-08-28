@@ -319,6 +319,7 @@ RAVEN_CONFIG = {
     'dsn': 'https://277f1fe721624944888af2ec317afa92:32f25c4158a643448196362607166bd1@sentry.lizard.net/22',
 }
 
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
 try:
     from flooding.localproductionsettings import *
