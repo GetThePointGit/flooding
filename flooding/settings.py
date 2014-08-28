@@ -21,7 +21,6 @@ except ImportError:
     import Image
 
 from .settingshelper import setup_logging
-from .settingshelper import STATICFILES_FINDERS
 
 from pkg_resources import resource_filename
 
@@ -100,6 +99,13 @@ MEDIA_ROOT = os.path.join(BUILDOUT_DIR, 'var', 'media')
 # applications' /media directory.
 STATIC_ROOT = os.path.join(BUILDOUT_DIR, 'var', 'static')
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # Enable support for django-compressor.
+    'compressor.finders.CompressorFinder',
+    )
+
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 MEDIA_URL = '/media/'
@@ -170,6 +176,7 @@ INSTALLED_APPS = (
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
     'django.contrib.staticfiles',
+    'raven.contrib.django.raven_compat',
     'south',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -294,19 +301,24 @@ QUEUES = {
 HEARTBEAT_QUEUES = ["120", "130", "132", "134", "150", "155", "160", "162", "180", "185", "190", "200", "210", "220"]
 
 # TODO: configure your broker settings
-# BROKER_SETTINGS = {
-#     "BROKER_HOST": "localhost",
-#     "BROKER_PORT": 5672,
-#     "BROKER_USER": "",
-#     "BROKER_PASSWORD": "",
-#     "BROKER_VHOST": "flooding-test",
-#     "HEARTBEAT": False
-# }
+BROKER_SETTINGS = {
+    "BROKER_HOST": "localhost",
+    "BROKER_PORT": 5672,
+    "BROKER_USER": "",
+    "BROKER_PASSWORD": "",
+    "BROKER_VHOST": "TODO",
+    "HEARTBEAT": False
+}
 
 # import ror-keringen
 ROR_KERINGEN_PATH = os.path.join(BUILDOUT_DIR, 'var', 'ror_keringen')
 ROR_KERINGEN_APPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'applied')
 ROR_KERINGEN_NOTAPPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'not_applied')
+
+RAVEN_CONFIG = {
+    'dsn': 'https://277f1fe721624944888af2ec317afa92:32f25c4158a643448196362607166bd1@sentry.lizard.net/22',
+}
+
 
 try:
     from flooding.localproductionsettings import *
