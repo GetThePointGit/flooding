@@ -22,6 +22,7 @@ install_requires = [
     'raven',
     'south',
     'supervisor',
+    'flask'
     ],
 
 tests_require = [
