@@ -5,6 +5,7 @@ import logging
 from django.http import HttpResponse
 from django.utils import simplejson as json
 from django.shortcuts import render_to_response
+from django.template import RequestContext
 from django.views.generic import View
 
 from lizard_worker import executor
@@ -41,7 +42,7 @@ class ScenarioWorkflowView(View):
         for scenario in scenarios:
             workflows = workermodels.Workflow.objects.filter(
                 scenario=scenario.id)
-            
+
             workflow_template_code = ""
             workflow_template_id = ""
             if scenario.workflow_template is not None:
@@ -65,7 +66,8 @@ class ScenarioWorkflowView(View):
                    'steps': range(1, len(from_indexes) + 1),
                    'amount_per_stap': amount_per_step}
 
-        return render_to_response(self.template, context)
+        return render_to_response(
+            self.template, context, context_instance=RequestContext(request))
 
     def post(self, request):
         if request.user.is_superuser is False:
