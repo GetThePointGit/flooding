@@ -15,7 +15,6 @@ function submitForm(form_id) {
            type:'POST',
            url: "{% url "execute_scenario" %}",
            dataType: "json",
-           contentType: "json",
            data:form.serialize(),
            success: function(data){
                $("#action_message").text(data.message);
