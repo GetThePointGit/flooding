@@ -140,3 +140,37 @@ The URL used to find the WMS server is set in the Django settings as
 RASTER_SERVER_URL. developmentsettings.py sets it to
 'http://127.0.0.1:5000/wms' by default, change it to whatever you need
 in localsettings.py if you are using virtual machines or similar.
+
+
+Windows (task-server)
+--------------------------------
+
+* Check out the ``windows`` subdirectory, and customize it if needed.
+* Check out the ``objectenbeheer/settings/windows.py`` module, and customize it if needed.
+
+* Run ``build_windows.sh`` from Linux to wrap everything in a nice zip.
+
+* In Windows, download Python 2.7.x from http://www.python.org/download/.
+* In Windows, download Psycopg2 from http://www.stickpeople.com/projects/python/win-psycopg/.
+
+* Extract the zip in the configured place, e.g. ``D:\Programs\flooding``.
+
+* In Windows, configure your ``PYTHONPATH`` environment variable to point to the absolute path of the ``flooding\lib`` subdirectory.
+  If you don't know how to do this, read https://kb.wisc.edu/cae/page.php?id=24500.
+
+* To tune local settings like the database connection, create or edit ``objectenbeheer\lib\flooding\localsettings.py``.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,6 +6,7 @@ develop-eggs
 etc/*.nginx.conf
 *.egg-info
 *.pyc
+*.*~
 parts
 var
 flooding/localproductionsettings.py
@@ -16,3 +17,5 @@ src
 etc/rasterserver.json
 build/
 htmlcov/
+windows_build/
+flooding-windows.zip
