@@ -83,8 +83,8 @@ LANGUAGE_CODE = 'nl'
 ugettext = lambda s: s
 
 LANGUAGES = (
-    ('en', ugettext('English')),
     ('nl', ugettext('Nederlands')),
+    ('en', ugettext('English')),
 )
 
 LOCALE_PATHS = (os.path.join(BUILDOUT_DIR, 'src', 'flooding-lib', 'flooding_lib', 'locale'),)
@@ -142,9 +142,9 @@ MIDDLEWARE_CLASSES = (
     # Gzip needs to be at the top.
     #'django.middleware.gzip.GZipMiddleware',
     # Below is the default list, don't modify it.
-    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
