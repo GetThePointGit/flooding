@@ -61,7 +61,7 @@ DATABASES = {
         'HOST': 'p-flod-db-00-d1.external-nens.local',
         'NAME': 'flooding',
         'USER': 'flooding',
-        'PORT': 5422, # Required for mapnik
+        'PORT': 5432, # Required for mapnik
         'PASSWORD': 'XXXXX'  # See localproductionsettings.py
         }
     }
