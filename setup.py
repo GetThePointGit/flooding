@@ -1,4 +1,6 @@
 from setuptools import setup
+import monkeypatch_setuptools
+
 
 version = '1.96dev'
 
