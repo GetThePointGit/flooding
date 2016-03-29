@@ -12,7 +12,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'HOST': '',
-        'PORT': 5422, # Required for mapnik
+        'PORT': 5432, # Required for mapnik
         'NAME': 'flooding',
         'USER': 'buildout',
         'PASSWORD': 'buildout'
