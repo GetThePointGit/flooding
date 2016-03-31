@@ -7,6 +7,7 @@ etc/*.nginx.conf
 *.egg-info
 *.pyc
 *.*~
+*~
 parts
 var
 flooding/localproductionsettings.py

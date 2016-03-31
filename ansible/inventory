@@ -1,0 +1,8 @@
+[production_web]
+p-flod-ws-d1.external-nens.local
+
+
+[production_web:vars]
+project_dir = /srv/flooding.lizard.net
+mount_host_isilon_dir = /p-flod-ws-d1.external-nens.local/nens/flooding
+checkout_name = master
