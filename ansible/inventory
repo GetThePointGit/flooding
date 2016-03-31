@@ -1,8 +1,14 @@
 [production_web]
 p-flod-ws-d1.external-nens.local
 
+[development]
+localhost
+
+[development:vars]
+project_dir = /home/alexandr/projecten/git/lizardsystem/dev_flooding
+checkout_name = master
 
 [production_web:vars]
 project_dir = /srv/flooding.lizard.net
 mount_host_isilon_dir = /p-flod-ws-d1.external-nens.local/nens/flooding
-checkout_name = master
+checkout_name = alex_add_ansible

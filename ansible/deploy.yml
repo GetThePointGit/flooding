@@ -2,8 +2,9 @@
 ---
 - hosts:
     - production_web
-  sudo: yes
-  sudo_user: buildout
+    - development
+  become: yes
+  become_user: buildout
 
   tasks:
     - debug: msg="If buildout fails, look at the buildout.log file."
