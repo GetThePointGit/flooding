@@ -18,7 +18,7 @@
       args:
         chdir: "{{ project_dir }}"
 
-    - name: Use the latest code from master if needed
+    - name: Use the latest code from master
       action: shell git pull
       args:
         chdir: "{{ project_dir }}"
