@@ -1,0 +1,56 @@
+# TODO
+---
+- hosts:
+    - production_web
+  become: yes
+  become_user: buildout
+
+  tasks:
+    - debug: msg="If buildout fails, look at the buildout.log file."
+
+    - name: Git-fetch the latest code from github
+      action: shell git fetch
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: Select the right git branch/tag
+      action: shell git checkout {{ checkout_name }}
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: Use the latest code from master
+      action: shell git pull
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: Run buildout for the first time
+      action: shell bin/buildout -vv > buildout.log 2>&1
+      args:
+        creates: ".installed.cfg"
+        chdir: "{{ project_dir }}"
+
+    - name: Update mr.developer checkouts
+      action: shell bin/develop up
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: Run buildout (warning, can take two minutes or so)
+      action: shell bin/buildout -vv > buildout.log 2>&1
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: Run migrate
+      action: shell bin/django migrate --noinput
+      args:
+        chdir: "{{ project_dir }}"
+
+    - name: "Make sure supervisord runs (note: an error message here is fine)"
+      action: shell bin/supervisord
+      args:
+        chdir: "{{ project_dir }}"
+      ignore_errors: yes
+
+    - name: Reload supervisor config and restart everything
+      action: shell bin/supervisorctl reload
+      args:
+        chdir: "{{ project_dir }}"

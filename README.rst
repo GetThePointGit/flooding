@@ -11,6 +11,11 @@ More details in src/flooding/USAGE.txt .
 Works with RabbitMQ version 2.8.7.
 
 
+Install Packages Ubuntu 14.04
+-----------------------------
+    $ sudo apt-get install binutils libproj-dev python-gdal gdal-bin python-scipy python-numpy
+
+
 Install production / staging server
 -----------------------------------
 
@@ -33,6 +38,26 @@ See staging-task-200.cfg as an example, it actually serves tasks 200,
 Problems can arise when installing netcdf4. Try:
 
     $ sudo apt-get install libhdf5-serial-dev libnetcdf-dev
+
+
+
+Deploying production webserver
+--------------------------------
+
+Deploying is done with ansible::
+
+   $ bin/ansible-playbook ansible/deploy.yml --limit production_web
+
+
+In case you need to release manually: ssh to the relevant server (look in
+``ansible/inventory`` for the hostname) and **sudo to buildout**::
+
+    $ cd /srv/HOSTNAME  # different for production/staging
+    $ git pull
+    $ bin/develop up
+    $ bin/buildout
+    $ bin/django migrate
+    $ bin/supervisorctl reload
 
 
 WARNING: buildout run on jupiter
@@ -96,6 +121,29 @@ Create a symbolic link ``BUILDOUT_DIR/var/ror_export`` to the mounted directory
 
     $ ln -s /mnt/flooding/Flooding/ror_keringen var
 
+
+GISDATA
+-------
+Copy shape-files to ``BUILDOUT_DIR/var/gisdata`` from old-webserver.
+
+
+EXCEL files
+-----------
+Copy excel-files to ``BUILDOUT_DIR/var/excel`` from old-webserver.
+
+
+Setup mount to flod-share
+-------------------------
+Set ``cifspw``, mount in ``fstab``. Then create dir ``/mnt/flod-share``.
+
+    $ sudo mkdir /mnt/flod-share
+    $ sudo chown buildout:buildout /mnt/flod-share
+    $ sudo mkdir -p /p-isilon-d1.external-nens.local/nens/flooding
+    $ sudo chown buildout:buildout -R /p-isilon-d1.external-nens.local
+    $ ln -s /mnt/flod-share flod-share
+    $ ln -s /mnt/flod-share/pyramids pyramids
+    $ ln -s /mnt/flod-share/ror_keringen ror_keringen
+    $ ln -s /mnt/flod-share/exportruns/export_runs_csvs export_run_results
 
 Symlink a buildout configuration
 --------------------------------
