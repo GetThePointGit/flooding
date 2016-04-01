@@ -20,7 +20,6 @@
 
     - name: Use the latest code from master if needed
       action: shell git pull
-      when: checkout_name == 'master'
       args:
         chdir: "{{ project_dir }}"
 
