@@ -20,3 +20,4 @@ build/
 htmlcov/
 windows_build/
 flooding-windows.zip
+deploy.retry
