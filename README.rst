@@ -40,6 +40,26 @@ Problems can arise when installing netcdf4. Try:
     $ sudo apt-get install libhdf5-serial-dev libnetcdf-dev
 
 
+
+Deploying production webserver
+--------------------------------
+
+Deploying is done with ansible::
+
+   $ bin/ansible-playbook ansible/deploy.yml --limit production_web
+
+
+In case you need to release manually: ssh to the relevant server (look in
+``ansible/inventory`` for the hostname) and **sudo to buildout**::
+
+    $ cd /srv/HOSTNAME  # different for production/staging
+    $ git pull
+    $ bin/develop up
+    $ bin/buildout
+    $ bin/django migrate
+    $ bin/supervisorctl reload
+
+
 WARNING: buildout run on jupiter
 --------------------------------
 
