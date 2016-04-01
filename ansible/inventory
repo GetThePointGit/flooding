@@ -4,4 +4,4 @@ p-flod-ws-d1.external-nens.local
 
 [production_web:vars]
 project_dir = /srv/flooding.lizard.net
-checkout_name = alex_add_ansible
+checkout_name = master
