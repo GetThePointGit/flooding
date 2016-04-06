@@ -210,7 +210,11 @@ Windows (task-server)
 
 
 
-
+Cleanup groupimport and importscenario
+--------------------------------------
+Run periodically ``cleanup_groupimport_dirs`` and ``cleanup_importscenario_dirs``
+management command of ``flooding-lib`` package to remove wrong/unregistered 
+import-files. The dirs locate in ``var/media/import/``
 
 
 

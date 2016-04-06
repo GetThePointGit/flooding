@@ -6,7 +6,8 @@ Changelog of flooding
 -----------------
 
 - Ping flooding_lib to 3.32
-
+- import dir moved from var/media to /mnt/flod-share/import
+- excel dir moved from var/excel to /mnt/flod-share/excel
 
 1.95.1 (2014-04-11)
 -------------------
