@@ -217,7 +217,11 @@ management command of ``flooding-lib`` package to remove wrong/unregistered
 import-files. The dirs locate in ``var/media/import/``
 
 
-
+Symlinks on windows
+-------------------------
+To avoid the problem with symlink on windows put the file ``sitecustomize.py`` 
+into site-packages directory of your Python installation. The file located in 
+windows dir ``{buildout:directory}/windows``
 
 
 
