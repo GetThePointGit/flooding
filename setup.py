@@ -25,7 +25,10 @@ install_requires = [
     'south',
     'supervisor',
     'flask',
-    'django-markdown-deux'
+    'django-markdown-deux',
+    'django-celery',
+    'kombu',
+    'celery',
     ],
 
 tests_require = [

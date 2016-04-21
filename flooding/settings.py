@@ -187,6 +187,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django_extensions',
     'django_nose',  # Must be below south
+    'celery',
+    'djcelery',
+    'kombu',
     'supervisor',
     'gunicorn',
     'markdown_deux',  # For markdown template filter in flooding-base
@@ -321,6 +324,11 @@ RAVEN_CONFIG = {
 }
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+BROKER_URL = 'amqp://flooding:frmq60A"@119-rmq-d1.external-nens.local:5672/flooding'
+CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
+CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
+
 
 try:
     from flooding.localproductionsettings import *
