@@ -39,6 +39,7 @@ Problems can arise when installing netcdf4. Try:
 
     $ sudo apt-get install libhdf5-serial-dev libnetcdf-dev
 
+Set /tmp directory on separate divice and check it periodically
 
 
 Deploying production webserver

@@ -218,8 +218,8 @@ EXTERNAL_PRESENTATION_MOUNTED_DIR = os.path.join(
     FLOODING_SHARE, 'presentationdatabase_totaal')
 EXTERNAL_RESULT_MOUNTED_DIR = os.path.join(
     FLOODING_SHARE, 'resultaten')
-TMP_DIR = os.path.join(
-    FLOODING_SHARE, 'tmp_dir_used_by_site')
+# Set /tmp on separate divice and check it periodically
+TMP_DIR = '/tmp'
 
 GIS_DIR = os.path.join(BUILDOUT_DIR, 'var', 'gisdata')
 
@@ -232,7 +232,7 @@ HISSSM_ROOT = ''
 SOBEK_PROGRAM_ROOT = ''
 #root of sobek projects
 SOBEK_PROJECT_ROOT = ''
-#root of temporary directory for flooding tasks
+#root of temporary directory for flooding tasks on windows
 TMP_ROOT = 'c:/temp'
 
 PERFORM_TASK_MODULE = "flooding_lib.tasks.perform_task"
