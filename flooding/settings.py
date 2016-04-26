@@ -233,7 +233,7 @@ SOBEK_PROGRAM_ROOT = ''
 #root of sobek projects
 SOBEK_PROJECT_ROOT = ''
 #root of temporary directory for flooding tasks on windows
-TMP_ROOT = 'c:/temp'
+TMP_ROOT = 'c:\\temp'
 
 PERFORM_TASK_MODULE = "flooding_lib.tasks.perform_task"
 PERFORM_TASK_FUNCTION = "perform_task"
