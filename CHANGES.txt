@@ -7,7 +7,7 @@ Changelog of flooding
 
 - Ping nens to 1.13
 
-- Ping flooding_lib to 3.32, to 4.2
+- Ping flooding_lib to 3.32, to 4.2, to 4.3
 
 - Import dir moved from var/media to /mnt/flod-share/import
 
