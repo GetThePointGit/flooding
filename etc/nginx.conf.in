@@ -27,7 +27,7 @@ server {
 
     location /download_results/ {
        internal;
-       alias /mnt/flooding/Flooding/resultaten/ ;
+       alias /mnt/flod-share/resultaten/ ;
     }
 
     location /download_excel/ {
