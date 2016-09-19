@@ -40,6 +40,11 @@ server {
        alias ${buildout:directory}/var/excel/shared/ ;
     }
 
+    location /download_ror_keringen_applied/ {
+       internal;
+       alias ${buildout:directory}/var/ror_keringen/applied/ ;
+    }
+
     location /download_export_run_results/ {
        internal;
        alias /mnt/flod-share/exportruns/export_runs_csvs/ ;
