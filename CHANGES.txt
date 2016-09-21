@@ -7,11 +7,13 @@ Changelog of flooding
 
 - Ping nens to 1.13
 
-- Ping flooding_lib to 3.32, to 4.2, to 4.3, 4.5
+- Ping flooding_lib to 3.32, to 4.2, to 4.3, 4.5, 4.7
 
 - Import dir moved from var/media to /mnt/flod-share/import
 
 - Excel dir moved from var/excel to /mnt/flod-share/excel
+
+- Edit help file.
 
 1.95.1 (2014-04-11)
 -------------------
