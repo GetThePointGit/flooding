@@ -37,7 +37,7 @@ server {
 
     location /download_excel_shared/ {
        internal;
-       alias ${buildout:directory}/var/excel/shared/ ;
+       alias ${buildout:directory}/var/excel/shared/ror/ ;
     }
 
     location /download_ror_keringen_applied/ {
