@@ -10,6 +10,7 @@
 import logging
 import os
 import tempfile
+import pkg_resources
 import matplotlib
 matplotlib.use('Agg')
 
@@ -21,8 +22,6 @@ except ImportError:
     import Image
 
 from .settingshelper import setup_logging
-
-from pkg_resources import resource_filename
 
 from logging.handlers import RotatingFileHandler
 
@@ -176,6 +175,7 @@ INSTALLED_APPS = (
                      # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
+    'flooding_lib.tools.gdmapstool',
     'django.contrib.staticfiles',
     'raven.contrib.django.raven_compat',
     'south',
@@ -211,7 +211,7 @@ TAIL_LOG = os.path.join(BUILDOUT_DIR, 'var', 'log', 'django_tail.log')
 handler = RotatingFileHandler(TAIL_LOG, maxBytes=4096, backupCount=1)
 logging.getLogger().addHandler(handler)
 
-SYMBOLS_DIR = resource_filename(
+SYMBOLS_DIR = pkg_resources.resource_filename(
     'flooding_visualization', 'media/flooding_visualization/symbols')
 FLOODING_SHARE = '//p-isilon-d1.external-nens.local/nens/flooding/flod-share/'
 EXTERNAL_PRESENTATION_MOUNTED_DIR = os.path.join(
@@ -316,9 +316,7 @@ ROR_KERINGEN_PATH = os.path.join(BUILDOUT_DIR, 'var', 'ror_keringen')
 ROR_KERINGEN_APPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'applied')
 ROR_KERINGEN_NOTAPPLIED_PATH = os.path.join(ROR_KERINGEN_PATH, 'not_applied')
 
-RAVEN_CONFIG = {
-    'dsn': 'https://277f1fe721624944888af2ec317afa92:32f25c4158a643448196362607166bd1@sentry.lizard.net/22',
-}
+RAVEN_CONFIG = {}
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 

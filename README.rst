@@ -225,7 +225,12 @@ into site-packages directory of your Python installation. The file located in
 windows dir ``{buildout:directory}/windows``
 
 
+Gebiedsdekkende kaarten
+-----------------------
+The app based on exporttool, used some parts of exporttool and located
+in ``flooding_lib/tools/gdmapstool``
 
+The app requires ``gdmapstool.change_gdmap`` permission.
 
 
 
