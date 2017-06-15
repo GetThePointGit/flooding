@@ -175,7 +175,6 @@ INSTALLED_APPS = (
                      # approvaltool
     'flooding_lib.tools.importtool',
     'flooding_lib.tools.exporttool',
-    'flooding_lib.tools.gdmapstool',
     'django.contrib.staticfiles',
     'raven.contrib.django.raven_compat',
     'south',
