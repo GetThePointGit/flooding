@@ -18,7 +18,6 @@ install_requires = [
     'flooding-lib >= 2.92',
     'gislib',
     'gunicorn',
-    'lizard-raster',
     'lizard-worker',
     'nens >= 1.11',
     'raven',
